@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.navbar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f2f2f2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar h1 {
+    color: cadetblue;
+}
+
+.content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.nameResource {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nameResource label {
+    text-align: left;
+    display: block;
+}
+
+.nameResource h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.nameResource input,
+.nameResource textarea,
+.nameResource select {
+    width: 100%;
+    padding: 6px, 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    min-height: 30px;
+}
+
+.nameResource button {
+    background: cadetblue;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.nameResource p {
+    font-size: 20px;
+    margin: 20px;
 }
