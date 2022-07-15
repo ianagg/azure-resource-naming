@@ -51,7 +51,7 @@ function NameResource() {
           />
           <label>Instance:</label>
           <input
-            type="text"
+            type="number"
             value={ instance }
             onChange={ (e) => setInstance(e.target.value) }
           />
