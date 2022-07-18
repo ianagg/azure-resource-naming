@@ -19,7 +19,5 @@ jobs:
       - name: Buid and Deploy
         if: github.event_name != 'pull_request'
         run: |
-          git config --global user.name 'Anton Putra'
-          git config --global user.email 'me@antonputra.com'
           git remote set-url origin https://x-access-token:${{ secrets.  GITHUB_TOKEN }}@github.com/${{ github.repository }}    
           npm run deploy
