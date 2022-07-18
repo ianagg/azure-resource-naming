@@ -14,13 +14,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install
-        run: yarn --no-progress --non-interactive --frozen-lockfile
+        run: npm install
 
-      - name: Build
-        run: yarn build
-
-      - name: Deploy
+      - name: Buid and Deploy
         if: github.event_name != 'pull_request'
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: build
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.  GITHUB_TOKEN }}@github.com/${{ github.repository }}    
+          npm run deploy
