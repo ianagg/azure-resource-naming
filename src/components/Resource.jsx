@@ -22,6 +22,7 @@ function Resource() {
 
   return (
     <div className="resource">
+      <h1>TEST</h1>
       <h2>Generate resource name</h2>
       <form onSubmit={handleSubmit}>
         <label>Resource type:</label>
