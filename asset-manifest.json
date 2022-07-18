@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/azure-resource-naming/static/css/main.d3f8d028.css",
+    "main.js": "/azure-resource-naming/static/js/main.d7f2fa12.js",
+    "index.html": "/azure-resource-naming/index.html",
+    "main.d3f8d028.css.map": "/azure-resource-naming/static/css/main.d3f8d028.css.map",
+    "main.d7f2fa12.js.map": "/azure-resource-naming/static/js/main.d7f2fa12.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3f8d028.css",
+    "static/js/main.d7f2fa12.js"
+  ]
+}
