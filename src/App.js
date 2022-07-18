@@ -1,12 +1,13 @@
-import Navbar from './Navbar';
-import NameResource from './NameResource';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <div className="content">
-        <NameResource />
+        <Home />
       </div>
     </div>
   );

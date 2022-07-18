@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import React from 'react'
+import { useState } from 'react'
 
-function NameResource() {
+function Resource() {
   const [resourceType, setResourceType] = useState('');
   const [businessUnit, setBusinessUnit] = useState('');
   const [appName, setAppName] = useState('');
@@ -20,7 +21,7 @@ function NameResource() {
   };
 
   return (
-    <div className="nameResource">
+    <div className="resource">
       <h2>Generate resource name</h2>
       <form onSubmit={handleSubmit}>
         <label>Resource type:</label>
@@ -60,4 +61,4 @@ function NameResource() {
   );
 }
 
-export default NameResource;
+export default Resource
