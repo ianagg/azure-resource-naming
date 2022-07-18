@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ianagg.github.io/azure-resource-naming",
   "name": "azure-resource-naming",
   "version": "0.1.0",
   "private": true,
