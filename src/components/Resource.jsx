@@ -7,6 +7,8 @@ function Resource() {
   const [appName, setAppName] = useState('');
   const [subscriptionType, setSubscriptionType] = useState('');
   const [instance, setInstance] = useState('');
+  const [env, setEnv] = useState('');
+
   const [resourceName, setResourceName] = useState('');
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,6 +17,7 @@ function Resource() {
       businessUnit,
       appName,
       subscriptionType,
+      env,
       instance,
     ];
     setResourceName(resourceValues.filter((s) => s).join('-'));
@@ -48,6 +51,17 @@ function Resource() {
           value={subscriptionType}
           onChange={(e) => setSubscriptionType(e.target.value)}
         />
+        <label>Deployment environment:</label>
+        <select
+            value={env}
+            onChange={(e) => setEnv(e.target.value)}
+          >
+            <option value=""></option>
+            <option value="dev">development</option>
+            <option value="stage">staging</option>
+            <option value="prod">production</option>
+            <option value="test">test</option>
+        </select>
         <label>Instance:</label>
         <input
           type="number"
