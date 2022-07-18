@@ -9,7 +9,7 @@ function App() {
         <NameResource />
       </div>
     </div>
-  ); 
+  );
 }
 
 export default App;
