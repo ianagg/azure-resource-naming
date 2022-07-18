@@ -1,0 +1,23 @@
+name: Continuous Deployment
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  continuous-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install
+        run: npm install
+
+      - name: Buid and Deploy
+        if: github.event_name != 'pull_request'
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.  GITHUB_TOKEN }}@github.com/${{ github.repository }}    
+          npm run deploy
