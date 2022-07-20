@@ -1,0 +1,332 @@
+[
+  {
+    "displayName": "South Africa North",
+    "name": "southafricanorth",
+    "regionalDisplayName": "(Africa) South Africa North "
+  },
+  {
+    "displayName": "South Africa West",
+    "name": "southafricawest",
+    "regionalDisplayName": "(Africa) South Africa West "
+  },
+  {
+    "displayName": "Australia Central",
+    "name": "australiacentral",
+    "regionalDisplayName": "(Asia Pacific) Australia Central "
+  },
+  {
+    "displayName": "Australia Central 2",
+    "name": "australiacentral2",
+    "regionalDisplayName": "(Asia Pacific) Australia Central 2 "
+  },
+  {
+    "displayName": "Australia East",
+    "name": "australiaeast",
+    "regionalDisplayName": "(Asia Pacific) Australia East "
+  },
+  {
+    "displayName": "Australia Southeast",
+    "name": "australiasoutheast",
+    "regionalDisplayName": "(Asia Pacific) Australia Southeast "
+  },
+  {
+    "displayName": "Central India",
+    "name": "centralindia",
+    "regionalDisplayName": "(Asia Pacific) Central India "
+  },
+  {
+    "displayName": "East Asia",
+    "name": "eastasia",
+    "regionalDisplayName": "(Asia Pacific) East Asia "
+  },
+  {
+    "displayName": "Japan East",
+    "name": "japaneast",
+    "regionalDisplayName": "(Asia Pacific) Japan East "
+  },
+  {
+    "displayName": "Japan West",
+    "name": "japanwest",
+    "regionalDisplayName": "(Asia Pacific) Japan West "
+  },
+  {
+    "displayName": "Jio India Central",
+    "name": "jioindiacentral",
+    "regionalDisplayName": "(Asia Pacific) Jio India Central "
+  },
+  {
+    "displayName": "Jio India West",
+    "name": "jioindiawest",
+    "regionalDisplayName": "(Asia Pacific) Jio India West "
+  },
+  {
+    "displayName": "Korea Central",
+    "name": "koreacentral",
+    "regionalDisplayName": "(Asia Pacific) Korea Central "
+  },
+  {
+    "displayName": "Korea South",
+    "name": "koreasouth",
+    "regionalDisplayName": "(Asia Pacific) Korea South "
+  },
+  {
+    "displayName": "South India",
+    "name": "southindia",
+    "regionalDisplayName": "(Asia Pacific) South India "
+  },
+  {
+    "displayName": "Southeast Asia",
+    "name": "southeastasia",
+    "regionalDisplayName": "(Asia Pacific) Southeast Asia "
+  },
+  {
+    "displayName": "West India",
+    "name": "westindia",
+    "regionalDisplayName": "(Asia Pacific) West India "
+  },
+  {
+    "displayName": "Canada Central",
+    "name": "canadacentral",
+    "regionalDisplayName": "(Canada) Canada Central "
+  },
+  {
+    "displayName": "Canada East",
+    "name": "canadaeast",
+    "regionalDisplayName": "(Canada) Canada East"
+  },
+  {
+    "displayName": "France Central",
+    "name": "francecentral",
+    "regionalDisplayName": "(Europe) France Central "
+  },
+  {
+    "displayName": "France South",
+    "name": "francesouth",
+    "regionalDisplayName": "(Europe) France South "
+  },
+  {
+    "displayName": "Germany North",
+    "name": "germanynorth",
+    "regionalDisplayName": "(Europe) Germany North "
+  },
+  {
+    "displayName": "Germany West Central",
+    "name": "germanywestcentral",
+    "regionalDisplayName": "(Europe) Germany West Central "
+  },
+  {
+    "displayName": "North Europe",
+    "name": "northeurope",
+    "regionalDisplayName": "(Europe) North Europe "
+  },
+  {
+    "displayName": "Norway East",
+    "name": "norwayeast",
+    "regionalDisplayName": "(Europe) Norway East "
+  },
+  {
+    "displayName": "Norway West",
+    "name": "norwaywest",
+    "regionalDisplayName": "(Europe) Norway West "
+  },
+  {
+    "displayName": "Sweden Central",
+    "name": "swedencentral",
+    "regionalDisplayName": "(Europe) Sweden Central "
+  },
+  {
+    "displayName": "Switzerland North",
+    "name": "switzerlandnorth",
+    "regionalDisplayName": "(Europe) Switzerland North "
+  },
+  {
+    "displayName": "Switzerland West",
+    "name": "switzerlandwest",
+    "regionalDisplayName": "(Europe) Switzerland West "
+  },
+  {
+    "displayName": "UK South",
+    "name": "uksouth",
+    "regionalDisplayName": "(Europe) UK South "
+  },
+  {
+    "displayName": "UK West",
+    "name": "ukwest",
+    "regionalDisplayName": "(Europe) UK West "
+  },
+  {
+    "displayName": "West Europe",
+    "name": "westeurope",
+    "regionalDisplayName": "(Europe) West Europe "
+  },
+  {
+    "displayName": "UAE Central",
+    "name": "uaecentral",
+    "regionalDisplayName": "(Middle East) UAE Central "
+  },
+  {
+    "displayName": "UAE North",
+    "name": "uaenorth",
+    "regionalDisplayName": "(Middle East) UAE North "
+  },
+  {
+    "displayName": "Brazil South",
+    "name": "brazilsouth",
+    "regionalDisplayName": "(South America) Brazil South "
+  },
+  {
+    "displayName": "Brazil Southeast",
+    "name": "brazilsoutheast",
+    "regionalDisplayName": "(South America) Brazil Southeast "
+  },
+  {
+    "displayName": "Central US",
+    "name": "centralus",
+    "regionalDisplayName": "(US) Central US "
+  },
+  {
+    "displayName": "Central US EUAP",
+    "name": "centraluseuap",
+    "regionalDisplayName": "(US) Central US EUAP"
+  },
+  {
+    "displayName": "East US",
+    "name": "eastus",
+    "regionalDisplayName": "(US) East US "
+  },
+  {
+    "displayName": "East US 2",
+    "name": "eastus2",
+    "regionalDisplayName": "(US) East US 2 "
+  },
+  {
+    "displayName": "East US 2 EUAP",
+    "name": "eastus2euap",
+    "regionalDisplayName": "(US) East US 2 EUAP "
+  },
+  {
+    "displayName": "North Central US",
+    "name": "northcentralus",
+    "regionalDisplayName": "(US) North Central US "
+  },
+  {
+    "displayName": "South Central US",
+    "name": "southcentralus",
+    "regionalDisplayName": "(US) South Central US "
+  },
+  {
+    "displayName": "West Central US",
+    "name": "westcentralus",
+    "regionalDisplayName": "(US) West Central US "
+  },
+  {
+    "displayName": "West US",
+    "name": "westus",
+    "regionalDisplayName": "(US) West US "
+  },
+  {
+    "displayName": "West US 2",
+    "name": "westus2",
+    "regionalDisplayName": "(US) West US 2 "
+  },
+  {
+    "displayName": "West US 3",
+    "name": "westus3",
+    "regionalDisplayName": "(US) West US 3 "
+  },
+  {
+    "displayName": "Asia",
+    "name": "asia",
+    "regionalDisplayName": "Asia "
+  },
+  {
+    "displayName": "Asia Pacific",
+    "name": "asiapacific",
+    "regionalDisplayName": "Asia Pacific "
+  },
+  {
+    "displayName": "Australia",
+    "name": "australia",
+    "regionalDisplayName": "Australia "
+  },
+  {
+    "displayName": "Brazil",
+    "name": "brazil",
+    "regionalDisplayName": "Brazil "
+  },
+  {
+    "displayName": "Canada",
+    "name": "canada",
+    "regionalDisplayName": "Canada "
+  },
+  {
+    "displayName": "Europe",
+    "name": "europe",
+    "regionalDisplayName": "Europe "
+  },
+  {
+    "displayName": "France",
+    "name": "france",
+    "regionalDisplayName": "France "
+  },
+  {
+    "displayName": "Germany",
+    "name": "germany",
+    "regionalDisplayName": "Germany "
+  },
+  {
+    "displayName": "Global",
+    "name": "global",
+    "regionalDisplayName": "Global "
+  },
+  {
+    "displayName": "India",
+    "name": "india",
+    "regionalDisplayName": "India"
+  },
+  {
+    "displayName": "Japan",
+    "name": "japan",
+    "regionalDisplayName": "Japan "
+  },
+  {
+    "displayName": "Korea",
+    "name": "korea",
+    "regionalDisplayName": "Korea "
+  },
+  {
+    "displayName": "Norway",
+    "name": "norway",
+    "regionalDisplayName": "Norway "
+  },
+  {
+    "displayName": "South Africa",
+    "name": "southafrica",
+    "regionalDisplayName": "South Africa "
+  },
+  {
+    "displayName": "Switzerland",
+    "name": "switzerland",
+    "regionalDisplayName": "Switzerland "
+  },
+  {
+    "displayName": "United Arab Emirates",
+    "name": "uae",
+    "regionalDisplayName": "United Arab Emirates "
+  },
+  {
+    "displayName": "United Kingdom",
+    "name": "uk",
+    "regionalDisplayName": "United Kingdom "
+  },
+  {
+    "displayName": "United States",
+    "name": "unitedstates",
+    "regionalDisplayName": "United States "
+  },
+  {
+    "displayName": "United States EUAP",
+    "name": "unitedstateseuap",
+    "regionalDisplayName": "United States EUAP"
+  }
+]

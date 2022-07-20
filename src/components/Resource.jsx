@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import regions from "../data/regions";
 
 function Resource() {
   const [resourceType, setResourceType] = useState('');
@@ -8,6 +9,7 @@ function Resource() {
   const [subscriptionType, setSubscriptionType] = useState('');
   const [instance, setInstance] = useState('');
   const [env, setEnv] = useState('');
+  const [region, setRegion] = useState('');
 
   const [resourceName, setResourceName] = useState('');
   const handleSubmit = (e) => {
@@ -18,6 +20,7 @@ function Resource() {
       appName,
       subscriptionType,
       env,
+      region,
       instance,
     ];
     setResourceName(resourceValues.filter((s) => s).join('-'));
@@ -61,6 +64,18 @@ function Resource() {
             <option value="stage">staging</option>
             <option value="prod">production</option>
             <option value="test">test</option>
+        </select>
+        <label>Region:</label>
+        <select
+            value={region}
+            onChange={(e) => setRegion(e.target.value)}
+          >
+            <option value=""></option>
+            {
+              regions.map((region) => {
+                return <option value={region.name}>{region.regionalDisplayName}</option> 
+              })
+            }
         </select>
         <label>Instance:</label>
         <input
