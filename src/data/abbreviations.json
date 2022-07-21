@@ -1,0 +1,510 @@
+[
+  {
+    "resourceId": "Microsoft.ApiManagement/service",
+    "abbreviation": "apim"
+  },
+  {
+    "resourceId": "Microsoft.ManagedIdentity/userAssignedIdentities",
+    "abbreviation": "id"
+  },
+  {
+    "resourceId": "Microsoft.Management/managementGroups",
+    "abbreviation": "mg"
+  },
+  {
+    "resourceId": "Microsoft.Authorization/policyDefinitions",
+    "abbreviation": "policy"
+  },
+  {
+    "resourceId": "Microsoft.Resources/resourceGroups",
+    "abbreviation": "rg"
+  },
+  {
+    "resourceId": "Microsoft.Network/applicationGateways",
+    "abbreviation": "agw"
+  },
+  {
+    "resourceId": "Microsoft.Network/applicationSecurityGroups",
+    "abbreviation": "asg"
+  },
+  {
+    "resourceId": "Microsoft.Network/bastionHosts",
+    "abbreviation": "bas"
+  },
+  {
+    "resourceId": "Microsoft.Cdn/profiles",
+    "abbreviation": "cdnp"
+  },
+  {
+    "resourceId": "Microsoft.Cdn/profiles/endpoints",
+    "abbreviation": "cdne"
+  },
+  {
+    "resourceId": "Microsoft.Network/connections",
+    "abbreviation": "con"
+  },
+  {
+    "resourceId": "Microsoft.Network/dnsZones",
+    "abbreviation": "dnsz"
+  },
+  {
+    "resourceId": "Microsoft.Network/privateDnsZones",
+    "abbreviation": "pdnsz"
+  },
+  {
+    "resourceId": "Microsoft.Network/azureFirewalls",
+    "abbreviation": "afw"
+  },
+  {
+    "resourceId": "Microsoft.Network/firewallPolicies",
+    "abbreviation": "afwp"
+  },
+  {
+    "resourceId": "Microsoft.Network/expressRouteCircuits",
+    "abbreviation": "erc"
+  },
+  {
+    "resourceId": "Microsoft.Network/frontDoors",
+    "abbreviation": "fd"
+  },
+  {
+    "resourceId": "Microsoft.Network/frontdoorWebApplicationFirewallPolicies",
+    "abbreviation": "fdfp"
+  },
+  {
+    "resourceId": "Microsoft.Network/loadBalancers",
+    "abbreviation": "lbi"
+  },
+  {
+    "resourceId": "Microsoft.Network/loadBalancers",
+    "abbreviation": "lbe"
+  },
+  {
+    "resourceId": "Microsoft.Network/loadBalancers/inboundNatRules",
+    "abbreviation": "rule"
+  },
+  {
+    "resourceId": "Microsoft.Network/localNetworkGateways",
+    "abbreviation": "lgw"
+  },
+  {
+    "resourceId": "Microsoft.Network/natGateways",
+    "abbreviation": "ng"
+  },
+  {
+    "resourceId": "Microsoft.Network/networkInterfaces",
+    "abbreviation": "nic"
+  },
+  {
+    "resourceId": "Microsoft.Network/networkSecurityGroups",
+    "abbreviation": "nsg"
+  },
+  {
+    "resourceId": "Microsoft.Network/networkSecurityGroups/securityRules",
+    "abbreviation": "nsgsr"
+  },
+  {
+    "resourceId": "Microsoft.Network/networkWatchers",
+    "abbreviation": "nw"
+  },
+  {
+    "resourceId": "Microsoft.Network/privateLinkServices",
+    "abbreviation": "pl"
+  },
+  {
+    "resourceId": "Microsoft.Network/publicIPAddresses",
+    "abbreviation": "pip"
+  },
+  {
+    "resourceId": "Microsoft.Network/publicIPPrefixes",
+    "abbreviation": "ippre"
+  },
+  {
+    "resourceId": "Microsoft.Network/routeFilters",
+    "abbreviation": "rf"
+  },
+  {
+    "resourceId": "Microsoft.Network/routeTables",
+    "abbreviation": "rt"
+  },
+  {
+    "resourceId": "Microsoft.serviceEndPointPolicies",
+    "abbreviation": "se"
+  },
+  {
+    "resourceId": "Microsoft.Network/trafficManagerProfiles",
+    "abbreviation": "traf"
+  },
+  {
+    "resourceId": "Microsoft.Network/routeTables/routes",
+    "abbreviation": "udr"
+  },
+  {
+    "resourceId": "Microsoft.Network/virtualNetworks",
+    "abbreviation": "vnet"
+  },
+  {
+    "resourceId": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
+    "abbreviation": "peer"
+  },
+  {
+    "resourceId": "Microsoft.Network/virtualNetworks/subnets",
+    "abbreviation": "snet"
+  },
+  {
+    "resourceId": "Microsoft.Network/virtualWans",
+    "abbreviation": "vwan"
+  },
+  {
+    "resourceId": "Microsoft.Network/vpnGateways",
+    "abbreviation": "vpng"
+  },
+  {
+    "resourceId": "Microsoft.Network/vpnGateways/vpnConnections",
+    "abbreviation": "vcn"
+  },
+  {
+    "resourceId": "Microsoft.Network/vpnGateways/vpnSites",
+    "abbreviation": "vst"
+  },
+  {
+    "resourceId": "Microsoft.Network/virtualNetworkGateways",
+    "abbreviation": "vgw"
+  },
+  {
+    "resourceId": "Microsoft.Network/firewallPolicies",
+    "abbreviation": "waf"
+  },
+  {
+    "resourceId": "Microsoft.Network/firewallPolicies/ruleGroups",
+    "abbreviation": "wafrg"
+  },
+  {
+    "resourceId": "Microsoft.Web/sites",
+    "abbreviation": "ase"
+  },
+  {
+    "resourceId": "Microsoft.Web/serverFarms",
+    "abbreviation": "plan"
+  },
+  {
+    "resourceId": "Microsoft.Compute/availabilitySets",
+    "abbreviation": "avail"
+  },
+  {
+    "resourceId": "Microsoft.HybridCompute/machines",
+    "abbreviation": "arcs"
+  },
+  {
+    "resourceId": "Microsoft.Kubernetes/connectedClusters",
+    "abbreviation": "arck"
+  },
+  {
+    "resourceId": "Microsoft.Compute/cloudServices",
+    "abbreviation": "cld"
+  },
+  {
+    "resourceId": "Microsoft.Compute/diskEncryptionSets",
+    "abbreviation": "des"
+  },
+  {
+    "resourceId": "Microsoft.Web/sites",
+    "abbreviation": "func"
+  },
+  {
+    "resourceId": "Microsoft.Compute/galleries",
+    "abbreviation": "gal"
+  },
+  {
+    "resourceId": "Microsoft.Compute/disks",
+    "abbreviation": "osdisk"
+  },
+  {
+    "resourceId": "Microsoft.Compute/disks",
+    "abbreviation": "disk"
+  },
+  {
+    "resourceId": "Microsoft.NotificationHubs/namespaces/notificationHubs",
+    "abbreviation": "ntf"
+  },
+  {
+    "resourceId": "Microsoft.NotificationHubs/namespaces",
+    "abbreviation": "ntfns"
+  },
+  {
+    "resourceId": "Microsoft.Compute/snapshots",
+    "abbreviation": "snap"
+  },
+  {
+    "resourceId": "Microsoft.Web/staticSites",
+    "abbreviation": "stapp"
+  },
+  {
+    "resourceId": "Microsoft.Compute/virtualMachines",
+    "abbreviation": "vm"
+  },
+  {
+    "resourceId": "Microsoft.Compute/virtualMachineScaleSets",
+    "abbreviation": "vmss"
+  },
+  {
+    "resourceId": "Microsoft.Storage/storageAccounts",
+    "abbreviation": "stvm"
+  },
+  {
+    "resourceId": "Microsoft.Web/sites",
+    "abbreviation": "app"
+  },
+  {
+    "resourceId": "Microsoft.ContainerService/managedClusters",
+    "abbreviation": "aks"
+  },
+  {
+    "resourceId": "Microsoft.ContainerRegistry/registries",
+    "abbreviation": "cr"
+  },
+  {
+    "resourceId": "Microsoft.ContainerInstance/containerGroups",
+    "abbreviation": "ci"
+  },
+  {
+    "resourceId": "Microsoft.ServiceFabric/clusters",
+    "abbreviation": "sf"
+  },
+  {
+    "resourceId": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases",
+    "abbreviation": "cosmos"
+  },
+  {
+    "resourceId": "Microsoft.Cache/Redis",
+    "abbreviation": "redis"
+  },
+  {
+    "resourceId": "Microsoft.Sql/servers",
+    "abbreviation": "sql"
+  },
+  {
+    "resourceId": "Microsoft.Sql/servers/databases",
+    "abbreviation": "sqldb"
+  },
+  {
+    "resourceId": "Microsoft.Synapse/workspaces",
+    "abbreviation": "syn"
+  },
+  {
+    "resourceId": "Microsoft.Synapse/workspaces",
+    "abbreviation": "synw"
+  },
+  {
+    "resourceId": "Microsoft.Synapse/workspaces/sqlPools",
+    "abbreviation": "syndp"
+  },
+  {
+    "resourceId": "Microsoft.Synapse/workspaces/sqlPools",
+    "abbreviation": "synsp"
+  },
+  {
+    "resourceId": "Microsoft.DBforMySQL/servers",
+    "abbreviation": "mysql"
+  },
+  {
+    "resourceId": "Microsoft.DBforPostgreSQL/servers",
+    "abbreviation": "psql"
+  },
+  {
+    "resourceId": "Microsoft.Sql/servers/databases",
+    "abbreviation": "sqlstrdb"
+  },
+  {
+    "resourceId": "Microsoft.Sql/managedInstances",
+    "abbreviation": "sqlmi"
+  },
+  {
+    "resourceId": "Microsoft.Storage/storageAccounts",
+    "abbreviation": "st"
+  },
+  {
+    "resourceId": "Microsoft.StorSimple/managers",
+    "abbreviation": "ssimp"
+  },
+  {
+    "resourceId": "Microsoft.Search/searchServices",
+    "abbreviation": "srch"
+  },
+  {
+    "resourceId": "Microsoft.CognitiveServices/accounts",
+    "abbreviation": "cog"
+  },
+  {
+    "resourceId": "Microsoft.MachineLearningServices/workspaces",
+    "abbreviation": "mlw"
+  },
+  {
+    "resourceId": "Microsoft.AnalysisServices/servers",
+    "abbreviation": "as"
+  },
+  {
+    "resourceId": "Microsoft.Databricks/workspaces",
+    "abbreviation": "dbw"
+  },
+  {
+    "resourceId": "Microsoft.StreamAnalytics/cluster",
+    "abbreviation": "asa"
+  },
+  {
+    "resourceId": "Microsoft.Kusto/clusters",
+    "abbreviation": "dec"
+  },
+  {
+    "resourceId": "Microsoft.Kusto/clusters/databases",
+    "abbreviation": "dedb"
+  },
+  {
+    "resourceId": "Microsoft.DataFactory/factories",
+    "abbreviation": "adf"
+  },
+  {
+    "resourceId": "Microsoft.DataLakeStore/accounts",
+    "abbreviation": "dls"
+  },
+  {
+    "resourceId": "Microsoft.DataLakeAnalytics/accounts",
+    "abbreviation": "dla"
+  },
+  {
+    "resourceId": "Microsoft.EventHub/namespaces",
+    "abbreviation": "evhns"
+  },
+  {
+    "resourceId": "Microsoft.EventHub/namespaces/eventHubs",
+    "abbreviation": "evh"
+  },
+  {
+    "resourceId": "Microsoft.EventGrid/domains",
+    "abbreviation": "evgd"
+  },
+  {
+    "resourceId": "Microsoft.EventGrid/eventSubscriptions",
+    "abbreviation": "evgs"
+  },
+  {
+    "resourceId": "Microsoft.EventGrid/domains/topics",
+    "abbreviation": "evgt"
+  },
+  {
+    "resourceId": "Microsoft.HDInsight/clusters",
+    "abbreviation": "hadoop"
+  },
+  {
+    "resourceId": "Microsoft.HDInsight/clusters",
+    "abbreviation": "hbase"
+  },
+  {
+    "resourceId": "Microsoft.HDInsight/clusters",
+    "abbreviation": "kafka"
+  },
+  {
+    "resourceId": "Microsoft.HDInsight/clusters",
+    "abbreviation": "spark"
+  },
+  {
+    "resourceId": "Microsoft.HDInsight/clusters",
+    "abbreviation": "storm"
+  },
+  {
+    "resourceId": "Microsoft.HDInsight/clusters",
+    "abbreviation": "mls"
+  },
+  {
+    "resourceId": "Microsoft.Devices/IotHubs",
+    "abbreviation": "iot"
+  },
+  {
+    "resourceId": "Microsoft.Devices/provisioningServices",
+    "abbreviation": "provs"
+  },
+  {
+    "resourceId": "Microsoft.Devices/provisioningServices/certificates",
+    "abbreviation": "pcert"
+  },
+  {
+    "resourceId": "Microsoft.PowerBIDedicated/capacities",
+    "abbreviation": "pbi"
+  },
+  {
+    "resourceId": "Microsoft.TimeSeriesInsights/environments",
+    "abbreviation": "tsi"
+  },
+  {
+    "resourceId": "Microsoft.AppConfiguration/configurationStores",
+    "abbreviation": "appcs"
+  },
+  {
+    "resourceId": "Microsoft.SignalRService/SignalR",
+    "abbreviation": "sigr"
+  },
+  {
+    "resourceId": "Microsoft.Logic/integrationAccounts",
+    "abbreviation": "ia"
+  },
+  {
+    "resourceId": "Microsoft.Logic/workflows",
+    "abbreviation": "logic"
+  },
+  {
+    "resourceId": "Microsoft.ServiceBus/namespaces",
+    "abbreviation": "sb"
+  },
+  {
+    "resourceId": "Microsoft.ServiceBus/namespaces/queues",
+    "abbreviation": "sbq"
+  },
+  {
+    "resourceId": "Microsoft.ServiceBus/namespaces/topics",
+    "abbreviation": "sbt"
+  },
+  {
+    "resourceId": "Microsoft.Automation/automationAccounts",
+    "abbreviation": "aa"
+  },
+  {
+    "resourceId": "Microsoft.Insights/components",
+    "abbreviation": "appi"
+  },
+  {
+    "resourceId": "Microsoft.Insights/actionGroups",
+    "abbreviation": "ag"
+  },
+  {
+    "resourceId": "Microsoft.Purview/accounts",
+    "abbreviation": "pview"
+  },
+  {
+    "resourceId": "Microsoft.Blueprint/blueprints",
+    "abbreviation": "bp"
+  },
+  {
+    "resourceId": "Microsoft.Blueprint/blueprints/artifacts",
+    "abbreviation": "bpa"
+  },
+  {
+    "resourceId": "Microsoft.KeyVault/vaults",
+    "abbreviation": "kv"
+  },
+  {
+    "resourceId": "Microsoft.OperationalInsights/workspaces",
+    "abbreviation": "log"
+  },
+  {
+    "resourceId": "Microsoft.Migrate/assessmentProjects",
+    "abbreviation": "migr"
+  },
+  {
+    "resourceId": "Microsoft.DataMigration/services",
+    "abbreviation": "dms"
+  },
+  {
+    "resourceId": "Microsoft.RecoveryServices/vaults",
+    "abbreviation": "rsv"
+  }
+]

@@ -1,8 +1,14 @@
 import React from 'react'
 import { useState } from 'react'
 import regions from "../data/regions";
+import abbr from "../data/abbreviations";
+import providers from "../data/providers";
 
 function Resource() {
+  const [provider, setProvider] = useState('');
+  const [entity, setEntity] = useState('');
+  const [listOfEntities, setlistOfEntities] = useState([]);
+  const [recomendation, setRecomendation] = useState('');
   const [resourceType, setResourceType] = useState('');
   const [businessUnit, setBusinessUnit] = useState('');
   const [appName, setAppName] = useState('');
@@ -26,23 +32,80 @@ function Resource() {
     setResourceName(resourceValues.filter((s) => s).join('-'));
   };
 
+  const isMatching = resourceType === recomendation;
+  var abbrDict = {};
+  abbr.map((data) => abbrDict[data.resourceId] = data.abbreviation);
+
+  var providersDict = {};
+  providers.map((data) => providersDict[data.provider] = data.entities);
+
+  const onProviderChange = (provider) => {
+    setProvider(provider);
+    setlistOfEntities(providersDict[provider]);
+    addRecomendation(provider, entity); 
+  };
+
+  const onEntityChange = (entity) => {
+    setEntity(entity);
+    addRecomendation(provider, entity);
+  }
+
+  const addRecomendation = (provider, entity) => {
+    const resourceId = [provider, entity].join('/');
+    setRecomendation(abbrDict[resourceId]);
+    if (!resourceType) 
+    {
+      setResourceType(abbrDict[resourceId]);
+    }
+  }
+
   return (
     <div className="resource">
       <h2>Generate resource name</h2>
       <form onSubmit={handleSubmit}>
+        <label>Provider:</label>
+        <select
+            value={provider}
+            onChange={(e) => onProviderChange(e.target.value)}
+          >
+            <option value=""></option>
+            {
+              providers.map((data) => {
+                return <option value={data.provider}>{data.provider}</option> 
+              })
+            }
+        </select>
+        <label>Entity:</label>
+        <select
+            value={entity}
+            onChange={(e) => onEntityChange(e.target.value)}
+          >
+            <option value=""></option>
+            {
+              listOfEntities.map((ent) => {
+                return <option value={ent}>{ent}</option> 
+              })
+            }
+        </select>
         <label>Resource type:</label>
         <input
           type="text"
           value={resourceType}
           onChange={(e) => setResourceType(e.target.value)}
         />
+        {
+          !isMatching && recomendation && 
+          <p className='recomendation'>Recomended value for resource type: <b>{recomendation}</b></p>
+        }
+        <br/>
+        <br/>
         <label>Business unit:</label>
         <input
           type="text"
           value={businessUnit}
           onChange={(e) => setBusinessUnit(e.target.value)}
         />
-        <label>Application ot service name:</label>
+        <label>Application or service name:</label>
         <input
           type="text"
           value={appName}

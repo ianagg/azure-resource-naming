@@ -1,0 +1,611 @@
+[
+  {
+    "provider": "Microsoft.AnalysisServices",
+    "entities": ["servers"]
+  },
+  {
+    "provider": "Microsoft.ApiManagement",
+    "entities": [
+      "service",
+      "service/apis",
+      "service/apis/issues",
+      "service/apis/issues/attachments",
+      "service/apis/issues/comments",
+      "service/apis/operations",
+      "service/apis/operations/tags",
+      "service/apis/releases",
+      "service/apis/schemas",
+      "service/apis/tagDescriptions",
+      "service/apis/tags",
+      "service/api-version-sets",
+      "service/authorizationServers",
+      "service/backends",
+      "service/certificates",
+      "service/diagnostics",
+      "service/groups",
+      "service/groups/users",
+      "service/identityProviders",
+      "service/loggers",
+      "service/notifications",
+      "service/notifications/recipientEmails",
+      "service/openidConnectProviders",
+      "service/policies",
+      "service/products",
+      "service/products/apis",
+      "service/products/groups",
+      "service/products/tags",
+      "service/properties",
+      "service/subscriptions",
+      "service/tags",
+      "service/templates",
+      "service/users"
+    ]
+  },
+  {
+    "provider": "Microsoft.App",
+    "entities": ["containerApps"]
+  },
+  {
+    "provider": "Microsoft.AppConfiguration",
+    "entities": ["configurationStores"]
+  },
+  {
+    "provider": "Microsoft.AppPlatform",
+    "entities": ["spring"]
+  },
+  {
+    "provider": "Microsoft.Authorization",
+    "entities": [
+      "locks",
+      "policyAssignments",
+      "policyDefinitions",
+      "policySetDefinitions",
+      "roleAssignments",
+      "roleDefinitions"
+    ]
+  },
+  {
+    "provider": "Microsoft.Automation",
+    "entities": [
+      "automationAccounts",
+      "automationAccounts/certificates",
+      "automationAccounts/connections",
+      "automationAccounts/credentials",
+      "automationAccounts/runbooks",
+      "automationAccounts/schedules",
+      "automationAccounts/variables",
+      "automationAccounts/watchers",
+      "automationAccounts/webhooks"
+    ]
+  },
+  {
+    "provider": "Microsoft.Batch",
+    "entities": [
+      "batchAccounts",
+      "batchAccounts/applications",
+      "batchAccounts/certificates",
+      "batchAccounts/pools"
+    ]
+  },
+  {
+    "provider": "Microsoft.Blockchain",
+    "entities": ["blockchainMembers"]
+  },
+  {
+    "provider": "Microsoft.Blueprint",
+    "entities": ["blueprint", "blueprintAssignments"]
+  },
+  {
+    "provider": "Microsoft.BotService",
+    "entities": [
+      "botServices",
+      "botServices/channels",
+      "botServices/Connections",
+      "enterpriseChannels"
+    ]
+  },
+  {
+    "provider": "Microsoft.Cache",
+    "entities": ["Redis", "Redis/firewallRules"]
+  },
+  {
+    "provider": "Microsoft.Cdn",
+    "entities": ["profiles", "profiles/endpoints"]
+  },
+  {
+    "provider": "Microsoft.CertificateRegistration",
+    "entities": ["certificateOrders"]
+  },
+  {
+    "provider": "Microsoft.CognitiveServices",
+    "entities": ["accounts"]
+  },
+  {
+    "provider": "Microsoft.Compute",
+    "entities": [
+      "availabilitySets",
+      "cloudservices",
+      "diskEncryptionSets",
+      "disks",
+      "galleries",
+      "galleries/applications",
+      "galleries/applications/versions",
+      "galleries/images",
+      "galleries/images/versions",
+      "images",
+      "snapshots",
+      "virtualMachines",
+      "virtualMachineScaleSets"
+    ]
+  },
+  {
+    "provider": "Microsoft.Communication",
+    "entities": ["communicationServices"]
+  },
+  {
+    "provider": "Microsoft.ConfidentialLedger",
+    "entities": ["ledgers"]
+  },
+  {
+    "provider": "Microsoft.Consumption",
+    "entities": ["budgets"]
+  },
+  {
+    "provider": "Microsoft.ContainerInstance",
+    "entities": ["containerGroups"]
+  },
+  {
+    "provider": "Microsoft.ContainerRegistry",
+    "entities": [
+      "registries",
+      "registries/buildTasks",
+      "registries/buildTasks/steps",
+      "registries/replications",
+      "registries/scopeMaps",
+      "registries/tasks",
+      "registries/tokens",
+      "registries/webhooks"
+    ]
+  },
+  {
+    "provider": "Microsoft.ContainerService",
+    "entities": ["managedClusters", "openShiftManagedClusters"]
+  },
+  {
+    "provider": "Microsoft.CustomerInsights",
+    "entities": [
+      "hubs",
+      "hubs/authorizationPolicies",
+      "hubs/connectors",
+      "hubs/connectors/mappings",
+      "hubs/interactions",
+      "hubs/kpi",
+      "hubs/links",
+      "hubs/predictions",
+      "hubs/profiles",
+      "hubs/relationshipLinks",
+      "hubs/relationships",
+      "hubs/roleAssignments",
+      "hubs/views"
+    ]
+  },
+  {
+    "provider": "Microsoft.CustomProviders",
+    "entities": ["associations", "resourceProviders"]
+  },
+  {
+    "provider": "Microsoft.DataBox",
+    "entities": ["jobs"]
+  },
+  {
+    "provider": "Microsoft.Databricks",
+    "entities": ["workspaces"]
+  },
+  {
+    "provider": "Microsoft.DataFactory",
+    "entities": [
+      "factories",
+      "factories/dataflows",
+      "factories/datasets",
+      "factories/integrationRuntimes",
+      "factories/linkedservices",
+      "factories/pipelines",
+      "factories/triggers",
+      "factories/triggers/rerunTriggers"
+    ]
+  },
+  {
+    "provider": "Microsoft.DataLakeAnalytics",
+    "entities": [
+      "accounts",
+      "accounts/computePolicies",
+      "accounts/dataLakeStoreAccounts",
+      "accounts/firewallRules",
+      "accounts/storageAccounts"
+    ]
+  },
+  {
+    "provider": "Microsoft.DataLakeStore",
+    "entities": [
+      "accounts",
+      "accounts/firewallRules",
+      "accounts/virtualNetworkRules"
+    ]
+  },
+  {
+    "provider": "Microsoft.DataMigration",
+    "entities": ["services", "services/projects"]
+  },
+  {
+    "provider": "Microsoft.DBforMariaDB",
+    "entities": [
+      "servers",
+      "servers/databases",
+      "servers/firewallRules",
+      "servers/virtualNetworkRules"
+    ]
+  },
+  {
+    "provider": "Microsoft.DBforMySQL",
+    "entities": [
+      "servers",
+      "servers/databases",
+      "servers/firewallRules",
+      "servers/virtualNetworkRules"
+    ]
+  },
+  {
+    "provider": "Microsoft.DBforPostgreSQL",
+    "entities": [
+      "servers",
+      "servers/databases",
+      "servers/firewallRules",
+      "servers/virtualNetworkRules"
+    ]
+  },
+  {
+    "provider": "Microsoft.Devices",
+    "entities": [
+      "IotHubs",
+      "IotHubs/certificates",
+      "IotHubs/eventHubEndpoints/ConsumerGroups",
+      "provisioningServices",
+      "provisioningServices/certificates"
+    ]
+  },
+  {
+    "provider": "Microsoft.DevTestLab",
+    "entities": [
+      "labs",
+      "labs/customimages",
+      "labs/formulas",
+      "labs/virtualmachines"
+    ]
+  },
+  {
+    "provider": "Microsoft.DocumentDB",
+    "entities": ["databaseAccounts"]
+  },
+  {
+    "provider": "Microsoft.EventGrid",
+    "entities": ["domains", "domains/topics", "eventSubscriptions", "topics"]
+  },
+  {
+    "provider": "Microsoft.EventHub",
+    "entities": [
+      "clusters",
+      "namespaces",
+      "namespaces/AuthorizationRules",
+      "namespaces/disasterRecoveryConfigs",
+      "namespaces/eventhubs",
+      "namespaces/eventhubs/authorizationRules",
+      "namespaces/eventhubs/consumergroups"
+    ]
+  },
+  {
+    "provider": "Microsoft.HDInsight",
+    "entities": ["clusters"]
+  },
+  {
+    "provider": "Microsoft.ImportExport",
+    "entities": ["jobs"]
+  },
+  {
+    "provider": "Microsoft.Insights",
+    "entities": [
+      "actionGroups",
+      "components",
+      "scheduledQueryRules",
+      "metricAlerts",
+      "activityLogAlerts"
+    ]
+  },
+  {
+    "provider": "Microsoft.IoTCentral",
+    "entities": ["IoTApps"]
+  },
+  {
+    "provider": "Microsoft.KeyVault",
+    "entities": ["vaults", "vaults/secrets"]
+  },
+  {
+    "provider": "Microsoft.Kusto",
+    "entities": [
+      "clusters",
+      "clusters/databases",
+      "clusters/databases/dataConnections",
+      "clusters/databases/eventhubconnections"
+    ]
+  },
+  {
+    "provider": "Microsoft.LabServices",
+    "entities": ["labplans", "labs"]
+  },
+  {
+    "provider": "Microsoft.LoadTestService",
+    "entities": ["loadtests"]
+  },
+  {
+    "provider": "Microsoft.Logic",
+    "entities": [
+      "integrationAccounts",
+      "integrationAccounts/assemblies",
+      "integrationAccounts/batchConfigurations",
+      "integrationAccounts/certificates",
+      "integrationAccounts/maps",
+      "integrationAccounts/partners",
+      "integrationAccounts/rosettanetprocessconfigurations",
+      "integrationAccounts/schemas",
+      "integrationAccounts/sessions",
+      "integrationServiceEnvironments",
+      "integrationServiceEnvironments/managedApis",
+      "workflows"
+    ]
+  },
+  {
+    "provider": "Microsoft.MachineLearning",
+    "entities": ["commitmentPlans", "webServices", "workspaces"]
+  },
+  {
+    "provider": "Microsoft.MachineLearningServices",
+    "entities": ["workspaces", "workspaces/computes"]
+  },
+  {
+    "provider": "Microsoft.ManagedIdentity",
+    "entities": ["userAssignedIdentities"]
+  },
+  {
+    "provider": "Microsoft.Maps",
+    "entities": ["accounts"]
+  },
+  {
+    "provider": "Microsoft.Media",
+    "entities": [
+      "mediaservices",
+      "mediaservices/liveEvents",
+      "mediaservices/liveEvents/liveOutputs",
+      "mediaservices/streamingEndpoints"
+    ]
+  },
+  {
+    "provider": "Microsoft.NetApp",
+    "entities": [
+      "netAppAccounts",
+      "netAppAccounts/backups",
+      "netAppAccounts/backupPolicies",
+      "netAppAccounts/capacityPools",
+      "netAppAccounts/snapshots",
+      "netAppAccounts/snapshotPolicies",
+      "netAppAccounts/volumes",
+      "netAppAccounts/volumeGroups"
+    ]
+  },
+  {
+    "provider": "Microsoft.Network",
+    "entities": [
+      "applicationGateways",
+      "applicationSecurityGroups",
+      "azureFirewalls",
+      "bastionHosts",
+      "connections",
+      "dnsZones",
+      "expressRouteCircuits",
+      "firewallPolicies",
+      "firewallPolicies/ruleGroups",
+      "frontDoors",
+      "frontdoorWebApplicationFirewallPolicies",
+      "loadBalancers",
+      "loadBalancers/inboundNatRules",
+      "localNetworkGateways",
+      "networkInterfaces",
+      "networkSecurityGroups",
+      "networkSecurityGroups/securityRules",
+      "networkWatchers",
+      "privateDnsZones",
+      "privateDnsZones/virtualNetworkLinks",
+      "publicIPAddresses",
+      "publicIPPrefixes",
+      "routeFilters",
+      "routeFilters/routeFilterRules",
+      "routeTables",
+      "routeTables/routes",
+      "serviceEndpointPolicies",
+      "trafficmanagerprofiles",
+      "virtualNetworkGateways",
+      "virtualNetworks",
+      "virtualnetworks/subnets",
+      "virtualNetworks/virtualNetworkPeerings",
+      "virtualWans",
+      "vpnGateways",
+      "vpnGateways/vpnConnections",
+      "vpnSites"
+    ]
+  },
+  {
+    "provider": "Microsoft.NotificationHubs",
+    "entities": [
+      "namespaces",
+      "namespaces/AuthorizationRules",
+      "namespaces/notificationHubs",
+      "namespaces/notificationHubs/AuthorizationRules"
+    ]
+  },
+  {
+    "provider": "Microsoft.OperationalInsights",
+    "entities": ["clusters", "workspaces"]
+  },
+  {
+    "provider": "Microsoft.OperationsManagement",
+    "entities": ["solutions"]
+  },
+  {
+    "provider": "Microsoft.Portal",
+    "entities": ["dashboards"]
+  },
+  {
+    "provider": "Microsoft.PowerBI",
+    "entities": ["workspaceCollections"]
+  },
+  {
+    "provider": "Microsoft.PowerBIDedicated",
+    "entities": ["capacities"]
+  },
+  {
+    "provider": "Microsoft.Quantum",
+    "entities": ["workspaces"]
+  },
+  {
+    "provider": "Microsoft.RecoveryServices",
+    "entities": ["vaults", "vaults/backupPolicies"]
+  },
+  {
+    "provider": "Microsoft.Relay",
+    "entities": [
+      "namespaces",
+      "namespaces/AuthorizationRules",
+      "namespaces/HybridConnections",
+      "namespaces/HybridConnections/authorizationRules",
+      "namespaces/WcfRelays",
+      "namespaces/WcfRelays/authorizationRules"
+    ]
+  },
+  {
+    "provider": "Microsoft.Resources",
+    "entities": [
+      "deployments",
+      "resourcegroups",
+      "tagNames",
+      "tagNames/tagValues",
+      "templateSpecs"
+    ]
+  },
+  {
+    "provider": "Microsoft.Security",
+    "entities": [
+      "advancedThreatProtectionSettings",
+      "alertsSuppressionRules",
+      "assessmentMetadata",
+      "assessments",
+      "automations",
+      "autoProvisioningSettings",
+      "connectors",
+      "deviceSecurityGroups",
+      "informationProtectionPolicies",
+      "iotSecuritySolutions",
+      "locations/applicationWhitelistings",
+      "locations/jitNetworkAccessPolicies",
+      "ingestionSettings",
+      "pricings",
+      "securityContacts",
+      "settings",
+      "serverVulnerabilityAssessments",
+      "sqlVulnerabilityAssessments/baselineRules"
+    ]
+  },
+  {
+    "provider": "Microsoft.ServiceBus",
+    "entities": [
+      "namespaces",
+      "namespaces/AuthorizationRules",
+      "namespaces/disasterRecoveryConfigs",
+      "namespaces/migrationConfigurations",
+      "namespaces/queues",
+      "namespaces/queues/authorizationRules",
+      "namespaces/topics",
+      "namespaces/topics/authorizationRules",
+      "namespaces/topics/subscriptions",
+      "namespaces/topics/subscriptions/rules"
+    ]
+  },
+  {
+    "provider": "Microsoft.ServiceFabric",
+    "entities": ["clusters"]
+  },
+  {
+    "provider": "Microsoft.SignalRService",
+    "entities": ["signalR"]
+  },
+  {
+    "provider": "Microsoft.Sql",
+    "entities": [
+      "managedInstances",
+      "servers",
+      "servers/administrators",
+      "servers/databases",
+      "servers/databases/syncGroups",
+      "servers/elasticPools",
+      "servers/failoverGroups",
+      "servers/firewallRules",
+      "servers/keys"
+    ]
+  },
+  {
+    "provider": "Microsoft.Storage",
+    "entities": [
+      "storageAccounts",
+      "storageAccounts/blobServices",
+      "storageAccounts/blobServices/containers",
+      "storageAccounts/fileServices",
+      "storageAccounts/fileServices/shares",
+      "storageAccounts/managementPolicies",
+      "blob",
+      "queue",
+      "table"
+    ]
+  },
+  {
+    "provider": "Microsoft.StorageSync",
+    "entities": ["storageSyncServices", "storageSyncServices/syncGroups"]
+  },
+  {
+    "provider": "Microsoft.StorSimple",
+    "entities": ["managers"]
+  },
+  {
+    "provider": "Microsoft.StreamAnalytics",
+    "entities": [
+      "streamingjobs",
+      "streamingjobs/functions",
+      "streamingjobs/inputs",
+      "streamingjobs/outputs",
+      "streamingjobs/transformations"
+    ]
+  },
+  {
+    "provider": "Microsoft.Synapse",
+    "entities": ["workspaces", "workspaces/bigDataPools", "workspaces/sqlPools"]
+  },
+  {
+    "provider": "Microsoft.TimeSeriesInsights",
+    "entities": [
+      "environments",
+      "environments/accessPolicies",
+      "environments/eventSources",
+      "environments/referenceDataSets"
+    ]
+  },
+  {
+    "provider": "Microsoft.Web",
+    "entities": ["certificates", "serverfarms", "sites", "sites/slots"]
+  }
+]

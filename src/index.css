@@ -61,3 +61,12 @@
     font-size: 20px;
     margin: 20px;
 }
+
+.resource p.recomendation {
+    color: cadetblue;
+    text-align: left;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0px;
+    margin-bottom: 10px;
+}
