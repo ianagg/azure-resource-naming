@@ -1,13 +1,13 @@
-import Resource from "../components/Resource";
+import ResourceName from '../components/ResourceName';
 
-import React from 'react'
+import React from 'react';
 
 function Home() {
   return (
     <div>
-        <Resource/>
+      <ResourceName />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
