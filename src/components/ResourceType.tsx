@@ -1,49 +1,52 @@
-import React from 'react';
 import { useState } from 'react';
-import abbr from '../data/abbreviations';
-import providers from '../data/providers';
+import abbr from '../data/abbreviations.json';
+import providers from '../data/providers.json';
+import HelpfulLabel from './HelpfulLabel';
 
-function ResourceType({ keyName, event }) {
+interface ResourceTypeProps {
+  keyName: string
+  onDataChange: (key:string, data: string) => void
+}
+
+function ResourceType({ keyName, onDataChange } : ResourceTypeProps) {
   const [provider, setProvider] = useState('');
   const [entity, setEntity] = useState('');
-  const [listOfEntities, setlistOfEntities] = useState([]);
+  const [listOfEntities, setlistOfEntities] = useState<string[]>([]);
   const [recomendation, setRecomendation] = useState('');
   const [resourceType, setResourceType] = useState('');
 
   const isMatching = resourceType === recomendation;
-  var abbrDict = {};
+  var abbrDict: {[key:string]: string} = {};
   abbr.map((data) => (abbrDict[data.resourceId] = data.abbreviation));
 
-  var providersDict = {};
+  var providersDict: {[key:string]: string[]} = {};
   providers.map((data) => (providersDict[data.provider] = data.entities));
 
-  const onProviderChange = (provider) => {
-    setProvider(provider);
-    if (providersDict[provider]) setlistOfEntities(providersDict[provider]);
+  const onProviderChange = (dataProvider: string) => {
+    setProvider(dataProvider);
+    if (providersDict[dataProvider])
+      setlistOfEntities(providersDict[dataProvider]);
     else setlistOfEntities([]);
-    addRecomendation(provider, entity);
+    addRecomendation(dataProvider, entity);
   };
 
-  const onEntityChange = (entity) => {
-    setEntity(entity);
-    addRecomendation(provider, entity);
+  const onEntityChange = (dataEntity: string) => {
+    setEntity(dataEntity);
+    addRecomendation(provider, dataEntity);
   };
 
-  const addRecomendation = (provider, entity) => {
-    const resourceId = [provider, entity].join('/');
+  const addRecomendation = (dataProvider: string , dataEntity: string) => {
+    const resourceId = [dataProvider, dataEntity].join('/');
     setRecomendation(abbrDict[resourceId]);
-    if (!resourceType) {
-      onChange(abbrDict[resourceId]);
-    }
   };
 
-  const onChange = (value) => {
+  const onChange = (value: string) => {
     setResourceType(value);
-    event(keyName, value);
+    onDataChange(keyName, value);
   };
 
   return (
-    <div>
+    <>
       <label>Provider:</label>
       <select
         value={provider}
@@ -69,7 +72,10 @@ function ResourceType({ keyName, event }) {
           );
         })}
       </select>
-      <label>Resource type:</label>
+      <HelpfulLabel
+        label={'Resource type:'}
+        content={'An abbreviation that represents the type of Azure resource or asset'}
+      />
       <input
         type="text"
         value={resourceType}
@@ -80,7 +86,7 @@ function ResourceType({ keyName, event }) {
           Recomended value for resource type: <b>{recomendation}</b>
         </p>
       )}
-    </div>
+    </>
   );
 }
 

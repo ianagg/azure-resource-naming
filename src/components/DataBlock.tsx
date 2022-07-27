@@ -1,22 +1,36 @@
-import React from 'react';
+import { ChangeEvent } from 'react';
 import { useState } from 'react';
+import HelpfulLabel from './HelpfulLabel';
+
+interface DataBlockProps {
+  label: string
+  content: string
+  keyName: string
+  displayValues?: Map<string,string>
+  onDataChange: (key: string, data: string) => void
+  defaultValue?: string
+}
+
 
 function DataBlock({
   label,
+  content,
   keyName,
   displayValues,
-  event,
+  onDataChange,
   defaultValue = '',
-}) {
+} : DataBlockProps) {
   const [data, setData] = useState(defaultValue);
-  const handleEvent = (e) => {
+  const handleEvent = (e: ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
     setData(e.target.value);
-    event(keyName, e.target.value);
+    onDataChange(keyName, e.target.value);
   };
 
   return (
-    <div>
-      <label>{label}</label>
+    <>
+      <HelpfulLabel
+      label={label}
+      content={content}/>
       {displayValues && (
         <select value={data} onChange={(e) => handleEvent(e)}>
           {Array.from(displayValues.entries()).map((entry) => {
@@ -32,7 +46,7 @@ function DataBlock({
       {!displayValues && (
         <input type="text" value={data} onChange={(e) => handleEvent(e)} />
       )}
-    </div>
+    </>
   );
 }
 
