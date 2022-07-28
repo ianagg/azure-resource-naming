@@ -1,72 +1,79 @@
 .content {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
 /* Navigation bar */
 .navbar {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    max-width: 600px;
-    margin: 0 auto;
-    border-bottom: 1px solid #f2f2f2;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .navbar h1 {
-    color: cadetblue;
+  color: cadetblue;
+}
+
+/* Resource name */
+.name span.value, 
+.name span.placeholder {
+  display: block;
+  margin: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  min-height: 50px;
+}
+
+.name span.placeholder {
+  font-style: italic;
+  color: rgba(95, 158, 160, 0.67);
 }
 
 /* Resource form */
 .resource {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .resource label {
-    text-align: left;
-    display: block;
+  text-align: left;
+  display: block;
 }
 
 .resource h2 {
-    font-size: 20px;
-    margin-bottom: 30px;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .resource input,
 .resource textarea,
 .resource select {
-    width: 100%;
-    padding: 6px, 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    display: block;
-    min-height: 30px;
-}
-
-.resource button {
-    background: cadetblue;
-    color: #fff;
-    border: 0;
-    padding: 8px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 20px;
+  width: 100%;
+  padding: 6px, 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  min-height: 30px;
 }
 
 .resource p {
-    font-size: 20px;
-    margin: 20px;
+  font-size: 20px;
+  margin: 20px;
 }
 
 .resource p.recomendation {
-    color: cadetblue;
-    text-align: left;
-    font-size: 16px;
-    font-style: italic;
-    margin: 0px;
-    margin-bottom: 10px;
+  color: cadetblue;
+  text-align: left;
+  font-size: 14px;
+  font-style: italic;
+  margin: 0px;
+  margin-bottom: 10px;
 }
