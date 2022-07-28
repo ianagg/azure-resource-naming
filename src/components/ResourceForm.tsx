@@ -24,7 +24,7 @@ function ResourceForm({onResourceChange} : ResourceFormProps) {
   .set('dev', 'development')
   .set('stage', 'staging')
   .set('prod', 'production')
-  .set('test', 'tes');
+  .set('test', 'test');
 
   const regions = new Map();
   regions.set('', '');
