@@ -19,20 +19,52 @@
 }
 
 /* Resource name */
-.name span.value, 
-.name span.placeholder {
-  display: block;
+.name {
+  display: table;
   margin: 20px;
   margin-bottom: 30px;
   padding: 10px;
   text-align: center;
   font-size: 18px;
   min-height: 50px;
+  border: 1px solid cadetblue;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.name p {
+  display: table-cell;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.name button {
+  display: table-cell;
+  width: 1%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  background-color: cadetblue;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  color: #f2f2f2;
+}
+
+.name span.container {
+  display: flex;
+  height: 100%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .name span.placeholder {
   font-style: italic;
-  color: rgba(95, 158, 160, 0.67);
+  color: cadetblue;
 }
 
 /* Resource form */
