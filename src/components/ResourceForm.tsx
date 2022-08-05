@@ -2,6 +2,7 @@ import { useState } from 'react';
 import regionsJson from '../data/regions.json';
 import DataBlock from './DataBlock';
 import ResourceType from './ResourceType';
+import '../styles/ResourceForm.css'
 
 interface ResourceFormProps {
   onResourceChange: (resourceValues: string[]) => void;
@@ -39,7 +40,7 @@ function ResourceForm({onResourceChange} : ResourceFormProps) {
   };
 
   return (
-    <div className="resource">
+    <div className="resourceForm">
       <ResourceType keyName={'resourceType'} onDataChange={onChange} />
       <DataBlock
         label={'Business unit:'}
@@ -48,7 +49,7 @@ function ResourceForm({onResourceChange} : ResourceFormProps) {
         onDataChange={onChange}
       />
       <DataBlock
-        label={'Application or service name:'}
+        label={'Application name:'}
         content={'Name of the application, workload, or service that the resource is a part of'}
         keyName={'appName'}
         onDataChange={onChange}
@@ -75,7 +76,7 @@ function ResourceForm({onResourceChange} : ResourceFormProps) {
       />
       <DataBlock
         label={'Instance:'}
-        content={'The inventory numbering'}
+        content={'Instance number'}
         keyName={'instance'}
         onDataChange={onChange} />
     </div>

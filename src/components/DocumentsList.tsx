@@ -1,6 +1,6 @@
 function DocumentsList() {
   return (
-    <div>
+    <>
         <p>Here you can find relevant documentation about Azure resource naming.</p>
         <ul>
             <li>
@@ -24,7 +24,7 @@ function DocumentsList() {
                 </a>
             </li>
         </ul>
-    </div>
+    </>
   )
 }
 

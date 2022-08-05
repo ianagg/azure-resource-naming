@@ -1,0 +1,63 @@
+.resourceForm {
+    grid-area: form;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: repeat(10, 30px);
+    grid-gap: 16px;
+    margin: 40px;
+    padding: 20px;
+}
+
+.helpfulLabel,
+.resourceForm label {
+    grid-column: 1 / 2;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.resourceForm input,
+.resourceForm select {
+    grid-column: 2 / 3;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.resourceForm p {
+    grid-column: 2 / 3;
+    min-height: 30px;
+    margin: 0;
+    color: cadetblue;
+    font-style: italic;
+}
+
+.resourceForm input:focus,
+.resourceForm select:focus {
+    outline: none;
+    border: 2px solid cadetblue;
+}
+
+@media (max-width: 975px) {
+    .resourceForm {
+        grid-area: form;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: repeat(10, 30px);
+        grid-gap: 16px;
+        margin: 10px;
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .helpfulLabel,
+    .resourceForm label {
+        grid-column: 1 / 2;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+    
+}

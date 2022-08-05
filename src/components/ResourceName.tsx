@@ -2,6 +2,7 @@ import ResourceForm from './ResourceForm';
 import { useState } from 'react';
 import { Copy20Regular, Checkmark24Regular } from '@fluentui/react-icons';
 import { Tooltip } from '@fluentui/react-components';
+import '../styles/ResourceResult.css'
 
 function ResourceName() {
   const [resourceName, setResourceName] = useState('');
@@ -38,8 +39,10 @@ function ResourceName() {
 
   const isNameExists = Boolean(resourceName);
   return (
-    <>     
-      <div className='name'>
+    <>    
+    <ResourceForm onResourceChange={handleChange} />
+      <div className='resourceResult'>
+      <div className='resourceName'>
         <p>
           {isNameExists && <span className='value'>{resourceName} </span>}
           {!isNameExists && <span className='placeholder'>{'your-resource-name'}</span>}
@@ -57,7 +60,10 @@ function ResourceName() {
         </button>
       </Tooltip>
       </div>
-      <ResourceForm onResourceChange={handleChange} />  
+      <div className="resourceValidation">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+      </div>
+    </div>
     </>
   );
 }
