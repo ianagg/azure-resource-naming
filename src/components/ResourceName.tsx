@@ -8,12 +8,15 @@ function ResourceName() {
   const [resourceName, setResourceName] = useState('');
   const [isCopied, setIsCopied] = useState(false);
   const [visible, setVisible] = useState(false);
+  const [isNameValid, setIsNameValid] = useState(true);
+  const [validationErrors, setValidationErrors] = useState<string[]>([]);
   const delay = 1000;
 
-  const handleChange = (resourceValues: string[]) => {
-    const joinChar = '-';
-    setResourceName(resourceValues.filter((s) => s).join(joinChar));
-  };
+  const handleChange = (name: string, isValid: boolean, errors: string[]) => {
+    setResourceName(name);
+    setIsNameValid(isValid);
+    setValidationErrors(errors);
+  }
 
   const copyToClipboard = async (text: string) =>  {
     if ('clipboard' in navigator) {
@@ -42,7 +45,7 @@ function ResourceName() {
     <>    
     <ResourceForm onResourceChange={handleChange} />
       <div className='resourceResult'>
-      <div className='resourceName'>
+      <div className= {isNameValid? 'resourceName' : 'invalidName'}>
         <p>
           {isNameExists && <span className='value'>{resourceName} </span>}
           {!isNameExists && <span className='placeholder'>{'your-resource-name'}</span>}
@@ -55,13 +58,17 @@ function ResourceName() {
           withArrow
           hideDelay={delay}
         >
-        <button onClick={() => handleCopyClick(resourceName)}>
+        <button onClick={() => handleCopyClick(resourceName)} disabled={!isNameValid}>
           <span className='container'>{ isCopied ? <Checkmark24Regular/> : <Copy20Regular/>}</span>
         </button>
       </Tooltip>
       </div>
       <div className="resourceValidation">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+        {!isNameValid && 
+        <ul>
+          {validationErrors.map((err) => {return <li key={err}>{err}</li>})}
+        </ul>
+        } 
       </div>
     </div>
     </>

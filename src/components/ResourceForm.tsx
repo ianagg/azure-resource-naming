@@ -5,10 +5,14 @@ import ResourceType from './ResourceType';
 import '../styles/ResourceForm.css'
 
 interface ResourceFormProps {
-  onResourceChange: (resourceValues: string[]) => void;
+  onResourceChange: (name: string, isValid: boolean, errors: string[]) => void;
 }
 
 function ResourceForm({onResourceChange} : ResourceFormProps) {
+  const [joinChar, setJoinChar] = useState<string | undefined>();
+  const [regex, setRegex] = useState<string | undefined>();
+  const [errors, setErrors] = useState<string[]>([]);
+
   const defaultResourceValues = new Map()
   .set('resourceType', '')
   .set('businessUnit', '')
@@ -18,7 +22,7 @@ function ResourceForm({onResourceChange} : ResourceFormProps) {
   .set('region', '')
   .set('instance', '');
   
-  const [resourceValues, setResourceValues] = useState<Map<string, string> | undefined>(defaultResourceValues);
+  const [resourceValues, setResourceValues] = useState<Map<string, string>>(defaultResourceValues);
 
   const environments = new Map()
   .set('', '')
@@ -35,13 +39,37 @@ function ResourceForm({onResourceChange} : ResourceFormProps) {
 
   const onChange = (key: string, data: string) => {
     resourceValues!.set(key, data);
-    setResourceValues(resourceValues);
-    onResourceChange(Array.from(resourceValues!.values()));
+    setResourceValues(resourceValues);   
+    validate(resourceValues, joinChar, regex, errors);
   };
+
+  const onResourceTypeChange = (typeData: string, joinChar?: string, regex?: string, errors?: string[]) => {  
+    setJoinChar(joinChar);
+    setRegex(regex);
+    setErrors(errors?? []);
+
+    resourceValues!.set('resourceType', typeData);
+    setResourceValues(resourceValues);
+    
+    validate(resourceValues, joinChar, regex, errors);
+  }
+
+  const validate = (resourceValues: Map<string,string>, joinChar?: string, regex?: string, errors?: string[]) => {
+    const valuesArr = Array.from(resourceValues!.values());
+    const name = valuesArr.filter((s) => s).join(joinChar?? "");
+    if (regex) {
+      const regexExp = new RegExp(regex);
+      const isValid = regexExp.test(name);
+      onResourceChange(name, isValid, errors?? []);
+    } else 
+    {
+      onResourceChange(name, true, []);
+    }
+  }
 
   return (
     <div className="resourceForm">
-      <ResourceType keyName={'resourceType'} onDataChange={onChange} />
+      <ResourceType onDataChange={onResourceTypeChange} />
       <DataBlock
         label={'Business unit:'}
         content={'Top-level division of your company that owns the subscription or workload the resource belongs to'}

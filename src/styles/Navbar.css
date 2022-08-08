@@ -75,10 +75,11 @@
         top: 60px;
         left: 0;
         width: 100%;
-        /* height: calc(100vh - 60px); */
+        height: calc(100vh - 60px);
         background-color: cadetblue;
         border-top: 1px solid black;
         display: none;
+        z-index: 1;
     }
 
     .navigation-menu li {
