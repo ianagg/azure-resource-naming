@@ -1,0 +1,86 @@
+.resourceResult {
+    grid-area: result;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    margin: 40px;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.resourceName,
+.invalidName {
+    display: table;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    min-height: 50px;
+    border: 1px solid cadetblue;
+    border-radius: 10px;
+    box-sizing: border-box;
+    align-self: end;
+}
+
+.invalidName {
+    border: 1px solid rgb(208, 51, 51);
+}
+
+p {
+    display: table-cell;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    word-break: break-all;
+    padding: 0px 10px 0px 10px;
+}
+
+button {
+    display: table-cell;
+    width: 1%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    background-color: cadetblue;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+    color: #f2f2f2;
+}
+
+button:disabled {
+    background-color: gray;
+}
+
+span.container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: minmax(auto 500px);
+}
+
+span.placeholder {
+    font-style: italic;
+    color: cadetblue;
+}
+
+.resourceValidation {
+    color: rgb(208, 51, 51);
+}
+
+.resourceValidation p {
+    margin: 10px;
+}
+
+@media (max-width: 975px) {
+    .resourceResult {
+        grid-area: result;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        margin: 10px;
+        padding: 20px;
+        max-width: 600px;
+    }
+}

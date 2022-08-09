@@ -8,12 +8,10 @@ function App() {
     <StaticRouter basename="/azure-resource-naming">
     <div className="App">
       <Navbar />
-      <div className="content">
-        <Routes>
-          <Route path="/" element = {<Home />}/>
-          <Route path="/docs" element = {<Documentation />}/>
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element = {<Home />}/>
+        <Route path="/docs" element = {<Documentation />}/>
+      </Routes>
     </div>
     </StaticRouter>
   );

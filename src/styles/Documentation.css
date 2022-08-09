@@ -1,0 +1,20 @@
+.documentation {
+    display: grid;
+    grid-template-columns: 1fr, 4fr, 1fr;
+    grid-template-areas: 
+    ". documentList .";
+}
+
+.documentList {
+    grid-area: documentList;
+    margin: 40px;
+}
+
+a {
+    color: cadetblue;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: grey;
+}

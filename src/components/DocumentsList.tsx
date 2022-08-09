@@ -1,7 +1,9 @@
 function DocumentsList() {
   return (
-    <div>
-        <p>Here you can find relevant documentation about Azure resource naming.</p>
+    <div className="documentList">
+        <p>
+            Here you can find relevant documentation about Azure resource naming.
+        </p>
         <ul>
             <li>
                 <a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming" target="_blank" rel="noopener noreferrer">

@@ -1,0 +1,12 @@
+[
+  {
+    "resourceId": "Microsoft.AnalysisServices/servers",
+    "joinChar": "",
+    "regex": "^[a-z]([a-z0-9]+){2,62}$",
+    "errors": [
+      "Length of the name should be between 3-63 characters",
+      "Only lowercase letters and numbers are allowed",
+      "Name of the resource should start with the lowercase letter"
+    ]
+  }
+]

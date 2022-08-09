@@ -1,0 +1,16 @@
+.resource {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "form result";
+}
+
+@media (max-width: 975px) {
+    .resource {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas:
+                "form form"
+                "result result";
+        }
+}

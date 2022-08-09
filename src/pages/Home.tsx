@@ -1,8 +1,9 @@
 import ResourceName from '../components/ResourceName';
+import '../styles/Resource.css'
 
 function Home() {
   return (
-    <div>
+    <div className='resource'>
       <ResourceName />
     </div>
   );

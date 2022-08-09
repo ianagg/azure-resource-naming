@@ -1,8 +1,9 @@
 import DocumentsList from "../components/DocumentsList";
+import '../styles/Documentation.css'
 
 function Documentation() {
   return (
-    <div>
+    <div className="documentation">
       <DocumentsList />
     </div>
   );
