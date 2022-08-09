@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/azure-resource-naming/static/css/main.44a660bc.css",
-    "main.js": "/azure-resource-naming/static/js/main.26ff046a.js",
+    "main.css": "/azure-resource-naming/static/css/main.fdb9499d.css",
+    "main.js": "/azure-resource-naming/static/js/main.b1a13ca5.js",
     "index.html": "/azure-resource-naming/index.html",
-    "main.44a660bc.css.map": "/azure-resource-naming/static/css/main.44a660bc.css.map",
-    "main.26ff046a.js.map": "/azure-resource-naming/static/js/main.26ff046a.js.map"
+    "main.fdb9499d.css.map": "/azure-resource-naming/static/css/main.fdb9499d.css.map",
+    "main.b1a13ca5.js.map": "/azure-resource-naming/static/js/main.b1a13ca5.js.map"
   },
   "entrypoints": [
-    "static/css/main.44a660bc.css",
-    "static/js/main.26ff046a.js"
+    "static/css/main.fdb9499d.css",
+    "static/js/main.b1a13ca5.js"
   ]
 }
