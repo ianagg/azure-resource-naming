@@ -11,7 +11,6 @@ interface DataBlockProps {
   defaultValue?: string
 }
 
-
 function DataBlock({
   label,
   content,
