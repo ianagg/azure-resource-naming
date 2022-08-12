@@ -5,16 +5,21 @@ import validations from '../data/validation.json';
 import HelpfulLabel from './HelpfulLabel';
 
 interface ResourceTypeProps {
-  onDataChange: (typeData: string, joinChar?: string, regex?: string, errors?: string[]) => void
+  onDataChange: (
+    typeData: string,
+    joinChar?: string,
+    regex?: string,
+    errors?: string[]
+  ) => void;
 }
 
 interface Validation {
-  joinChar: string,
-  regex: string,
-  errors: string[],
+  joinChar: string;
+  regex: string;
+  errors: string[];
 }
 
-function ResourceType({ onDataChange } : ResourceTypeProps) {
+function ResourceType({ onDataChange }: ResourceTypeProps) {
   const [provider, setProvider] = useState('');
   const [entity, setEntity] = useState('');
   const [listOfEntities, setlistOfEntities] = useState<string[]>([]);
@@ -22,14 +27,21 @@ function ResourceType({ onDataChange } : ResourceTypeProps) {
   const [resourceType, setResourceType] = useState('');
 
   const isMatching = resourceType === recomendation;
-  var abbrDict: {[key:string]: string} = {};
+  var abbrDict: { [key: string]: string } = {};
   abbr.map((data) => (abbrDict[data.resourceId] = data.abbreviation));
 
-  var providersDict: {[key:string]: string[]} = {};
+  var providersDict: { [key: string]: string[] } = {};
   providers.map((data) => (providersDict[data.provider] = data.entities));
 
-  var validationsDict: {[key:string]: Validation} = {};
-  validations.map((data) => (validationsDict[data.resourceId] = {joinChar: data.joinChar, regex: data.regex, errors: data.errors} as Validation));
+  var validationsDict: { [key: string]: Validation } = {};
+  validations.map(
+    (data) =>
+      (validationsDict[data.resourceId] = {
+        joinChar: data.joinChar,
+        regex: data.regex,
+        errors: data.errors,
+      } as Validation)
+  );
 
   const onProviderChange = (dataProvider: string) => {
     setProvider(dataProvider);
@@ -47,26 +59,36 @@ function ResourceType({ onDataChange } : ResourceTypeProps) {
     onChange(provider, dataEntity, resourceType);
   };
 
-  const addRecomendation = (dataProvider: string , dataEntity: string) => {
+  const addRecomendation = (dataProvider: string, dataEntity: string) => {
     const resourceId = [dataProvider, dataEntity].join('/');
     setRecomendation(abbrDict[resourceId]);
   };
 
-  const onChange = (dataProvider: string, dataEntity: string, value: string) => {
+  const onChange = (
+    dataProvider: string,
+    dataEntity: string,
+    value: string
+  ) => {
     setResourceType(value);
     const resourceId = [dataProvider, dataEntity].join('/');
     const validationRule = validationsDict[resourceId];
     if (validationRule) {
-      onDataChange(value, validationRule.joinChar, validationRule.regex, validationRule.errors);
+      onDataChange(
+        value,
+        validationRule.joinChar,
+        validationRule.regex,
+        validationRule.errors
+      );
     } else {
       onDataChange(value);
-    } 
+    }
   };
 
   return (
     <>
       <label>Provider:</label>
       <select
+        data-testid="provider"
         value={provider}
         onChange={(e) => onProviderChange(e.target.value)}
       >
@@ -80,7 +102,11 @@ function ResourceType({ onDataChange } : ResourceTypeProps) {
         })}
       </select>
       <label>Entity:</label>
-      <select value={entity} onChange={(e) => onEntityChange(e.target.value)}>
+      <select
+        data-testid="entity"
+        value={entity}
+        onChange={(e) => onEntityChange(e.target.value)}
+      >
         <option value=""></option>
         {listOfEntities.map((ent) => {
           return (
@@ -92,7 +118,9 @@ function ResourceType({ onDataChange } : ResourceTypeProps) {
       </select>
       <HelpfulLabel
         label={'Resource type:'}
-        content={'An abbreviation that represents the type of Azure resource or asset'}
+        content={
+          'An abbreviation that represents the type of Azure resource or asset'
+        }
       />
       <input
         type="text"
@@ -100,7 +128,7 @@ function ResourceType({ onDataChange } : ResourceTypeProps) {
         onChange={(e) => onChange(provider, entity, e.target.value)}
       />
       {!isMatching && recomendation && (
-        <p className="recomendation">
+        <p data-testid="suggestion" className="recomendation">
           Recomended value for resource type: <b>{recomendation}</b>
         </p>
       )}
