@@ -2,34 +2,33 @@ import { useState } from 'react';
 import regionsJson from '../data/regions.json';
 import DataBlock from './DataBlock';
 import ResourceType from './ResourceType';
-import '../styles/ResourceForm.css'
+import '../styles/ResourceForm.css';
 
 interface ResourceFormProps {
-  onResourceChange: (name: string, isValid: boolean, errors: string[]) => void;
+  onResourceChange: (nameComponents: string[], resourceId: string) => void;
 }
 
-function ResourceForm({onResourceChange} : ResourceFormProps) {
-  const [joinChar, setJoinChar] = useState<string | undefined>();
-  const [regex, setRegex] = useState<string | undefined>();
-  const [errors, setErrors] = useState<string[]>([]);
-
+function ResourceForm({ onResourceChange }: ResourceFormProps) {
+  const [resourceId, setResourceId] = useState('');
   const defaultResourceValues = new Map()
-  .set('resourceType', '')
-  .set('businessUnit', '')
-  .set('appName', '')
-  .set('subscriptionType', '')
-  .set('env', '')
-  .set('region', '')
-  .set('instance', '');
-  
-  const [resourceValues, setResourceValues] = useState<Map<string, string>>(defaultResourceValues);
+    .set('resourceType', '')
+    .set('businessUnit', '')
+    .set('appName', '')
+    .set('subscriptionType', '')
+    .set('env', '')
+    .set('region', '')
+    .set('instance', '');
+
+  const [resourceValues, setResourceValues] = useState<Map<string, string>>(
+    defaultResourceValues
+  );
 
   const environments = new Map()
-  .set('', '')
-  .set('dev', 'development')
-  .set('stage', 'staging')
-  .set('prod', 'production')
-  .set('test', 'test');
+    .set('', '')
+    .set('dev', 'development')
+    .set('stage', 'staging')
+    .set('prod', 'production')
+    .set('test', 'test');
 
   const regions = new Map();
   regions.set('', '');
@@ -39,58 +38,54 @@ function ResourceForm({onResourceChange} : ResourceFormProps) {
 
   const onChange = (key: string, data: string) => {
     resourceValues!.set(key, data);
-    setResourceValues(resourceValues);   
-    validate(resourceValues, joinChar, regex, errors);
+    setResourceValues(resourceValues);
+    onResourceChange(nameArray(), resourceId);
   };
 
-  const onResourceTypeChange = (typeData: string, joinChar?: string, regex?: string, errors?: string[]) => {  
-    setJoinChar(joinChar);
-    setRegex(regex);
-    setErrors(errors?? []);
-
+  const onResourceTypeChange = (typeData: string, resourceId: string) => {
     resourceValues!.set('resourceType', typeData);
     setResourceValues(resourceValues);
-    
-    validate(resourceValues, joinChar, regex, errors);
-  }
+    setResourceId(resourceId);
+    onResourceChange(nameArray(), resourceId);
+  };
 
-  const validate = (resourceValues: Map<string,string>, joinChar?: string, regex?: string, errors?: string[]) => {
+  const nameArray = () => {
     const valuesArr = Array.from(resourceValues!.values());
-    const name = valuesArr.filter((s) => s).join(joinChar?? "");
-    if (regex) {
-      const regexExp = new RegExp(regex);
-      const isValid = regexExp.test(name);
-      onResourceChange(name, isValid, errors?? []);
-    } else 
-    {
-      onResourceChange(name, true, []);
-    }
-  }
+    return valuesArr.filter((s) => s);
+  };
 
   return (
     <div className="resourceForm">
       <ResourceType onDataChange={onResourceTypeChange} />
       <DataBlock
         label={'Business unit:'}
-        content={'Top-level division of your company that owns the subscription or workload the resource belongs to'}
+        content={
+          'Top-level division of your company that owns the subscription or workload the resource belongs to'
+        }
         keyName={'businessUnit'}
         onDataChange={onChange}
       />
       <DataBlock
         label={'Application name:'}
-        content={'Name of the application, workload, or service that the resource is a part of'}
+        content={
+          'Name of the application, workload, or service that the resource is a part of'
+        }
         keyName={'appName'}
         onDataChange={onChange}
       />
       <DataBlock
         label={'Subscription type:'}
-        content={'Summary description of the purpose of the subscription that contains the resource'}
+        content={
+          'Summary description of the purpose of the subscription that contains the resource'
+        }
         keyName={'subscriptionType'}
         onDataChange={onChange}
       />
       <DataBlock
         label={'Deployment environment:'}
-        content={'The stage of the development lifecycle for the workload that the resource supports'}
+        content={
+          'The stage of the development lifecycle for the workload that the resource supports'
+        }
         keyName={'env'}
         displayValues={environments}
         onDataChange={onChange}
@@ -106,7 +101,8 @@ function ResourceForm({onResourceChange} : ResourceFormProps) {
         label={'Instance:'}
         content={'Instance number'}
         keyName={'instance'}
-        onDataChange={onChange} />
+        onDataChange={onChange}
+      />
     </div>
   );
 }

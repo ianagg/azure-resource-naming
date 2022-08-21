@@ -3,19 +3,25 @@ import { useState } from 'react';
 import { Copy20Regular, Checkmark24Regular } from '@fluentui/react-icons';
 import { Tooltip } from '@fluentui/react-components';
 import '../styles/ResourceResult.css';
+import ValidationError from './ValidationError';
 
 function ResourceName() {
   const [resourceName, setResourceName] = useState('');
+  const [nameArray, setNameArray] = useState<string[]>([]);
+  const [resourceId, setResourceId] = useState('');
   const [isCopied, setIsCopied] = useState(false);
   const [visible, setVisible] = useState(false);
   const [isNameValid, setIsNameValid] = useState(true);
-  const [validationErrors, setValidationErrors] = useState<string[]>([]);
   const delay = 1000;
 
-  const handleChange = (name: string, isValid: boolean, errors: string[]) => {
-    setResourceName(name);
+  const handleChange = (nameArray: string[], resourceId: string) => {
+    setNameArray(nameArray);
+    setResourceId(resourceId);
+  };
+
+  const handleValidation = (isValid: boolean, name: string) => {
     setIsNameValid(isValid);
-    setValidationErrors(errors);
+    setResourceName(name);
   };
 
   const copyToClipboard = async (text: string) => {
@@ -70,15 +76,11 @@ function ResourceName() {
             </button>
           </Tooltip>
         </div>
-        <div className="resourceValidation">
-          {!isNameValid && (
-            <ul data-testid="validationErrors">
-              {validationErrors.map((err) => {
-                return <li key={err}>{err}</li>;
-              })}
-            </ul>
-          )}
-        </div>
+        <ValidationError
+          nameComponents={nameArray}
+          resourceId={resourceId}
+          onValidate={handleValidation}
+        />
       </div>
     </>
   );
