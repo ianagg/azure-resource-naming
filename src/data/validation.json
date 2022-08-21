@@ -2,11 +2,2740 @@
   {
     "resourceId": "Microsoft.AnalysisServices/servers",
     "joinChar": "",
-    "regex": "^[a-z]([a-z0-9]+){2,62}$",
+    "regex": "^[a-z0-9]+$",
+    "minLength": 3,
+    "maxLength": 63,
+    "startChar": "^[a-z]+",
     "errors": [
       "Length of the name should be between 3-63 characters",
       "Only lowercase letters and numbers are allowed",
-      "Name of the resource should start with the lowercase letter"
+      "Name of the resource should start with lowercase letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 50,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-50 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/apis",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/apis/issues",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/apis/issues/attachments",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/apis/issues/comments",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/apis/operations",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/apis/operations/tags",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/apis/releases",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/apis/schemas",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/apis/tagDescriptions",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/apis/tags",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/api-version-sets",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/authorizationServers",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/backends",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/certificates",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/diagnostics",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/apis/groups",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/apis/groups/users",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/identityProviders",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/loggers",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/notifications",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/notifications/recipientEmails",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/openidConnectProviders",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/policies",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/products",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/products/apis",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/products/groups",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/products/tags",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/properties",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/subscriptions",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/tags",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/templates",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ApiManagement/service/users",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.App/containerApps",
+    "joinChar": "-",
+    "regex": "^[a-z0-9\\-]+$",
+    "minLength": 2,
+    "maxLength": 32,
+    "startChar": "^[a-z]+",
+    "endChar": "[a-z0-9]+$",
+    "errors": [
+      "Length of the name should be between 2-32 characters",
+      "Only lowercase letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.AppConfiguration/configurationStores",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 5,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 5-50 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.AppPlatform/spring",
+    "joinChar": "-",
+    "regex": "^[a-z0-9\\-]+$",
+    "minLength": 4,
+    "maxLength": 32,
+    "errors": [
+      "Length of the name should be between 4-32 characters",
+      "Only lowercase letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Authorization/locks",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\.\\_\\-\\{\\}\\(\\)\\[\\]]+$",
+    "minLength": 1,
+    "maxLength": 90,
+    "endChar": "[^\\.]+$",
+    "errors": [
+      "Length of the name should be between 1-90 characters",
+      "Only letters, numbers, periods, underscores, hyphens and parenthesis are allowed",
+      "Name of the resource can't end with period"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Authorization/policyAssignments",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 64,
+    "endChar": "[^\\.]+$",
+    "errors": [
+      "Length of the name should be between 1-64 characters",
+      "Resource name can't use: <>*%&:\\?.+/ or control characters",
+      "Name of the resource can't end with period or space"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Authorization/policyDefinitions",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 64,
+    "endChar": "[^\\.]+$",
+    "errors": [
+      "Length of the name should be between 1-64 characters",
+      "Resource name can't use: <>*%&:\\?.+/ or control characters",
+      "Name of the resource can't end with period or space"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Authorization/policySetDefinitions",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 64,
+    "endChar": "[^\\.]+$",
+    "errors": [
+      "Length of the name should be between 1-64 characters",
+      "Resource name can't use: <>*%&:\\?.+/ or control characters",
+      "Name of the resource can't end with period or space"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Authorization/roleAssignments",
+    "joinChar": "",
+    "regex": "^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$",
+    "minLength": 36,
+    "maxLength": 36,
+    "errors": [
+      "Must be a globally unique identifier (GUID)",
+      "Length of the name should be 36 characters"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Authorization/roleDefinitions",
+    "joinChar": "",
+    "regex": "^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$",
+    "minLength": 36,
+    "maxLength": 36,
+    "errors": [
+      "Must be a globally unique identifier (GUID)",
+      "Length of the name should be 36 characters"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Automation/automationAccounts",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 6,
+    "maxLength": 50,
+    "startChar": "^[a-z]+",
+    "endChar": "[a-z0-9]+$",
+    "errors": [
+      "Length of the name should be between 6-50 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Automation/automationAccounts/certificates",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Can't use: <>*%&:\\?.+/ or control characters"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Automation/automationAccounts/connections",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Can't use: <>*%&:\\?.+/ or control characters"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Automation/automationAccounts/credentials",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Can't use: <>*%&:\\?.+/ or control characters"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Automation/automationAccounts/runbooks",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 63,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 1-63 characters",
+      "Only letters, numbers, underscores and hyphens are allowed",
+      "Name of the resource should start with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Automation/automationAccounts/schedules",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Can't use: <>*%&:\\?.+/ or control characters"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Automation/automationAccounts/variables",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Can't use: <>*%&:\\?.+/ or control characters"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Automation/automationAccounts/watchers",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 63,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 1-63 characters",
+      "Only letters, numbers, underscores and hyphens are allowed",
+      "Name of the resource should start with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Automation/automationAccounts/webhooks",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Can't use: <>*%&:\\?.+/ or control characters"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Batch/batchAccounts",
+    "joinChar": "",
+    "regex": "^[a-z0-9]+$",
+    "minLength": 3,
+    "maxLength": 24,
+    "errors": [
+      "Length of the name should be between 3-24 characters",
+      "Only lowercase letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Batch/batchAccounts/applications",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 64,
+    "errors": [
+      "Length of the name should be between 1-64 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Batch/batchAccounts/certificates",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 5,
+    "maxLength": 45,
+    "errors": [
+      "Length of the name should be between 5-45 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Batch/batchAccounts/pools",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 64,
+    "errors": [
+      "Length of the name should be between 1-64 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Blockchain/blockchainMembers",
+    "joinChar": "",
+    "regex": "^[a-z0-9]+$",
+    "minLength": 2,
+    "maxLength": 20,
+    "startChar": "^[a-z]+",
+    "errors": [
+      "Length of the name should be between 1-64 characters",
+      "Only lowercase letters and numbers are allowed",
+      "Name of the resource should start with lowercase letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Blueprint/blueprint",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 90,
+    "maxLength": 90,
+    "errors": [
+      "Length of the name should be 90 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with lowercase letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Blueprint/blueprintAssignments",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 90,
+    "maxLength": 90,
+    "errors": [
+      "Length of the name should be 90 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with lowercase letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.BotService/botServices",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 2,
+    "maxLength": 64,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 2-64 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.BotService/botServices/channels",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 2,
+    "maxLength": 64,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 2-64 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.BotService/botServices/Connections",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 2,
+    "maxLength": 64,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 2-64 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.BotService/enterpriseChannels",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 2,
+    "maxLength": 64,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 2-64 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Cache/Redis",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 63,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-63 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Cache/Redis/firewallRules",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 256,
+    "errors": [
+      "Length of the name should be between 1-256 characters",
+      "Only letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Cdn/profiles",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Cdn/profiles/endpoints",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 50,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-50 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CertificateRegistration/certificateOrders",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9]+$",
+    "minLength": 3,
+    "maxLength": 30,
+    "errors": [
+      "Length of the name should be between 3-30 characters",
+      "Only letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CognitiveServices/accounts",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 2,
+    "maxLength": 64,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 2-64 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Compute/availabilitySets",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9\\_]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter or number",
+      "Name of the resource can end only with letter, number or underscore"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Compute/cloudservices",
+    "joinChar": "",
+    "regex": "^[^\\~\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\=\\+\\_\\[\\]\\{\\}\\\\|\\;\\:\\.\\'\\\"\\,\\<\\>/\\?\\ ]+$",
+    "minLength": 1,
+    "maxLength": 15,
+    "startChar": "^[^\\_]+",
+    "endChar": "[^\\.\\-]+$",
+    "errors": [
+      "Length of the name should be between 1-15 characters",
+      "Can't use spaces, control characters, or these characters: ~ ! @ # $ % ^ & * ( ) = + _ [ ] { } \\ | ; : . ' \" , < > / ?",
+      "Can't start with underscore",
+      "Can't end with period or hyphen"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Compute/diskEncryptionSets",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, underscores and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Compute/disks",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, underscores and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Compute/galleries",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, underscores and hyphens are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Compute/galleries/applications",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, underscores and hyphens are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Compute/galleries/images",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, underscores and hyphens are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Compute/images",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9\\_]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, underscores and hyphens are allowed",
+      "Name of the resource should start with letter or number",
+      "Name of the resource should end with letter, number or underscore"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Compute/snapshots",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9\\_]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, underscores and hyphens are allowed",
+      "Name of the resource should start with letter or number",
+      "Name of the resource should end with letter, number or underscore"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Compute/virtualMachines",
+    "joinChar": "-",
+    "regex": "^[^\\~\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\=\\+\\_\\[\\]\\{\\}\\\\|\\;\\:\\.\\'\\\"\\,\\<\\>/\\?\\ ]+$",
+    "minLength": 1,
+    "maxLength": 15,
+    "endChar": "[^\\-\\.]+$",
+    "errors": [
+      "Length of the name should be between 1-15 characters",
+      "Can't use spaces, control characters, or these characters: ~ ! @ # $ % ^ & * ( ) = + _ [ ] { } \\ | ; : . ' \" , < > / ?",
+      "Windows VMs can't include period or end with hyphen",
+      "Linux VMs can't end with period or hyphen"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Compute/virtualMachineScaleSets",
+    "joinChar": "-",
+    "regex": "^[^\\~\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\=\\+\\_\\[\\]\\{\\}\\\\|\\;\\:\\.\\'\\\"\\,\\<\\>/\\?\\ ]+$",
+    "minLength": 1,
+    "maxLength": 15,
+    "startChar": "^[^\\_]+",
+    "endChar": "[^\\-\\.]+$",
+    "errors": [
+      "Length of the name should be between 1-15 characters",
+      "Can't use spaces, control characters, or these characters: ~ ! @ # $ % ^ & * ( ) = + _ [ ] { } \\ | ; : . ' \" , < > / ?",
+      "Can't start with underscore",
+      "Can't end with period or hyphen"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Communication/communicationServices",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 63,
+    "startChar": "^[^\\-]+",
+    "endChar": "[^\\-]+$",
+    "errors": [
+      "Length of the name should be between 1-63 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Can't start or end with hyphen"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ConfidentialLedger/ledgers",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 32,
+    "startChar": "^[^\\-]+",
+    "endChar": "[^\\-]+$",
+    "errors": [
+      "Length of the name should be between 3-32 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Can't start or end with hyphen"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Consumption/budgets",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 63,
+    "errors": [
+      "Length of the name should be between 1-63 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ContainerInstance/containerGroups",
+    "joinChar": "-",
+    "regex": "^[a-z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 63,
+    "startChar": "^[^\\-]+",
+    "endChar": "[^\\-]+$",
+    "errors": [
+      "Length of the name should be between 1-63 characters",
+      "Only lowercase letters, numbers and hyphens are allowed",
+      "Can't start or end with hyphen"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ContainerRegistry/registries",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9]+$",
+    "minLength": 5,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 5-50 characters",
+      "Only letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ContainerRegistry/registries/buildTasks",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9]+$",
+    "minLength": 5,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 5-50 characters",
+      "Only letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ContainerRegistry/registries/buildTasks/steps",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9]+$",
+    "minLength": 5,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 5-50 characters",
+      "Only letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ContainerRegistry/registries/replications",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9]+$",
+    "minLength": 5,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 5-50 characters",
+      "Only letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ContainerRegistry/registries/webhooks",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9]+$",
+    "minLength": 5,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 5-50 characters",
+      "Only letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ContainerRegistry/registries/scopeMaps",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 5,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 5-50 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ContainerRegistry/registries/tasks",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 5,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 5-50 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ContainerRegistry/registries/tokens",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 5,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 5-50 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ContainerService/managedClusters",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 63,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-63 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ContainerService/openShiftManagedClusters",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9]+$",
+    "minLength": 1,
+    "maxLength": 30,
+    "errors": [
+      "Length of the name should be between 1-30 characters",
+      "Only letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomerInsights/hubs/authorizationPolicies",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 50,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-50 characters",
+      "Only letters, numbers, underscores and periods are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomerInsights/hubs/connectors",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Only letters, numbers and underscores are allowed",
+      "Name of the resource should start and end with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomerInsights/hubs/connectors/mappings",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Only letters, numbers and underscores are allowed",
+      "Name of the resource should start and end with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomerInsights/hubs/interactions",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Only letters, numbers and underscores are allowed",
+      "Name of the resource should start and end with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomerInsights/hubs/kpi",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_]+$",
+    "minLength": 1,
+    "maxLength": 512,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 1-512 characters",
+      "Only letters, numbers and underscores are allowed",
+      "Name of the resource should start and end with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomerInsights/hubs/links",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_]+$",
+    "minLength": 1,
+    "maxLength": 512,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 1-512 characters",
+      "Only letters, numbers and underscores are allowed",
+      "Name of the resource should start and end with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomerInsights/hubs/predictions",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_]+$",
+    "minLength": 1,
+    "maxLength": 512,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 1-512 characters",
+      "Only letters, numbers and underscores are allowed",
+      "Name of the resource should start and end with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomerInsights/hubs/profiles",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Only letters, numbers and underscores are allowed",
+      "Name of the resource should start and end with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomerInsights/hubs/relationshipLinks",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_]+$",
+    "minLength": 1,
+    "maxLength": 512,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 1-512 characters",
+      "Only letters, numbers and underscores are allowed",
+      "Name of the resource should start and end with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomerInsights/hubs/relationships",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_]+$",
+    "minLength": 1,
+    "maxLength": 512,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 1-512 characters",
+      "Only letters, numbers and underscores are allowed",
+      "Name of the resource should start and end with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomerInsights/hubs/roleAssignments",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Only letters, numbers and underscores are allowed",
+      "Name of the resource should start and end with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomerInsights/hubs/views",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_]+$",
+    "minLength": 1,
+    "maxLength": 512,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 1-512 characters",
+      "Only letters, numbers and underscores are allowed",
+      "Name of the resource should start and end with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomProviders/associations",
+    "joinChar": "-",
+    "regex": "^[^[:cntrl:]\\%\\&\\\\?\\/]+$",
+    "minLength": 1,
+    "maxLength": 180,
+    "endChar": "[^\\.\\ ]+$",
+    "errors": [
+      "Length of the name should be between 1-180 characters",
+      "Can't use: %&\\?/ or control characters",
+      "Can't end with period or space"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.CustomProviders/resourceProviders",
+    "joinChar": "-",
+    "regex": "^[^[:cntrl:]\\%\\&\\\\?\\/]+$",
+    "minLength": 3,
+    "maxLength": 64,
+    "endChar": "[^\\.\\ ]+$",
+    "errors": [
+      "Length of the name should be between 3-64 characters",
+      "Can't use: %&\\?/ or control characters",
+      "Can't end with period or space"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataBox/jobs",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 3,
+    "maxLength": 24,
+    "errors": [
+      "Length of the name should be between 3-24 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Databricks/workspaces",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 3,
+    "maxLength": 64,
+    "errors": [
+      "Length of the name should be between 3-24 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataFactory/factories",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 63,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 3-63 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataFactory/factories/dataflows",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: <>*#.%&:\\+?/ or control characters",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataFactory/factories/datasets",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: <>*#.%&:\\+?/ or control characters",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataFactory/factories/integrationRuntimes",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 63,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 3-63 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataFactory/factories/linkedservices",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: <>*#.%&:\\+?/ or control characters",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataFactory/factories/pipelines",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: <>*#.%&:\\+?/ or control characters",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataFactory/factories/triggers",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: <>*#.%&:\\+?/ or control characters",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataFactory/factories/triggers/rerunTriggers",
+    "joinChar": "",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\.\\+\\/]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: <>*#.%&:\\+?/ or control characters",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataLakeAnalytics/accounts",
+    "joinChar": "",
+    "regex": "^[a-z0-9]+$",
+    "minLength": 3,
+    "maxLength": 24,
+    "errors": [
+      "Length of the name should be between 3-24 characters",
+      "Only lowercase letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataLakeAnalytics/accounts/dataLakeStoreAccounts",
+    "joinChar": "",
+    "regex": "^[a-z0-9]+$",
+    "minLength": 3,
+    "maxLength": 24,
+    "errors": [
+      "Length of the name should be between 3-24 characters",
+      "Only lowercase letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataLakeAnalytics/accounts/computePolicies",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 3,
+    "maxLength": 60,
+    "errors": [
+      "Length of the name should be between 3-60 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataLakeAnalytics/accounts/storageAccounts",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 3,
+    "maxLength": 60,
+    "errors": [
+      "Length of the name should be between 3-60 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataLakeAnalytics/accounts/firewallRules",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 3,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 3-50 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataLakeStore/accounts",
+    "joinChar": "",
+    "regex": "^[a-z0-9]+$",
+    "minLength": 3,
+    "maxLength": 24,
+    "errors": [
+      "Length of the name should be between 3-24 characters",
+      "Only lowercase letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataLakeStore/accounts/firewallRules",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 3,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 3-50 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataLakeStore/accounts/virtualNetworkRules",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 3,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 3-50 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataMigration/services",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 2,
+    "maxLength": 62,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 2-62 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DataMigration/services/projects",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 2,
+    "maxLength": 57,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 2-57 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DBforMariaDB/servers",
+    "joinChar": "-",
+    "regex": "^[a-z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 63,
+    "startChar": "^[^\\-]+",
+    "endChar": "[^\\-]+$",
+    "errors": [
+      "Length of the name should be between 3-63 characters",
+      "Only lowercase letters, numbers and hyphens are allowed",
+      "Name of the resource can't start or end with hyphen"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DBforMariaDB/servers/databases",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 63,
+    "errors": [
+      "Length of the name should be between 1-63 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DBforMariaDB/servers/firewallRules",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DBforMariaDB/servers/virtualNetworkRules",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DBforMySQL/servers",
+    "joinChar": "-",
+    "regex": "^[a-z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 63,
+    "startChar": "^[^\\-]+",
+    "endChar": "[^\\-]+$",
+    "errors": [
+      "Length of the name should be between 3-63 characters",
+      "Only lowercase letters, numbers and hyphens are allowed",
+      "Name of the resource can't start or end with hyphen"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DBforMySQL/servers/databases",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 63,
+    "errors": [
+      "Length of the name should be between 1-63 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DBforMySQL/servers/firewallRules",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DBforMySQL/servers/virtualNetworkRules",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DBforPostgreSQL/servers",
+    "joinChar": "-",
+    "regex": "^[a-z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 63,
+    "startChar": "^[^\\-]+",
+    "endChar": "[^\\-]+$",
+    "errors": [
+      "Length of the name should be between 3-63 characters",
+      "Only lowercase letters, numbers and hyphens are allowed",
+      "Name of the resource can't start or end with hyphen"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DBforPostgreSQL/servers/databases",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 63,
+    "errors": [
+      "Length of the name should be between 1-63 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DBforPostgreSQL/servers/firewallRules",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DBforPostgreSQL/servers/virtualNetworkRules",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DBforPostgreSQL/servers/virtualNetworkRules",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Devices/IotHubs",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 50,
+    "endChar": "[^\\-]+$",
+    "errors": [
+      "Length of the name should be between 3-50 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Can't end with hyphen"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Devices/IotHubs/certificates",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 64,
+    "errors": [
+      "Length of the name should be between 1-64 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Devices/IotHubs/eventHubEndpoints/ConsumerGroups",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 1-50 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Devices/provisioningServices/certificates",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 64,
+    "errors": [
+      "Length of the name should be between 1-64 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Devices/provisioningServices",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 64,
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 3-64 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource can end only with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DevTestLab/labs",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 1-50 characters",
+      "Only letters, numbers, hyphens and underscores are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DevTestLab/labs/customimages",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_\\-\\{\\}\\(\\)\\[\\]]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, hyphens, underscores and parentheses are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DevTestLab/labs/formulas",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\_\\-\\{\\}\\(\\)\\[\\]]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, hyphens, underscores and parentheses are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DevTestLab/labs/virtualmachines",
+    "joinChar": "",
+    "regex": "(?!^\\d+$)^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 15,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-15 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start and end with letter or number",
+      "Can't be all numbers"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.DocumentDB/databaseAccounts",
+    "joinChar": "-",
+    "regex": "^[a-z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 44,
+    "startChar": "^[a-z0-9]+",
+    "errors": [
+      "Length of the name should be between 3-44 characters",
+      "Only lowercase letters, numbers and hyphens are allowed",
+      "Name of the resource should start with lowercase letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.EventGrid/domains",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 3-50 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.EventGrid/domains/topics",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 3-50 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.EventGrid/topics",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 50,
+    "errors": [
+      "Length of the name should be between 3-50 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.EventGrid/eventSubscriptions",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 64,
+    "errors": [
+      "Length of the name should be between 3-64 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.EventHub/clusters",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 6,
+    "maxLength": 50,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 6-50 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.EventHub/namespaces",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 6,
+    "maxLength": 50,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 6-50 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.EventHub/namespaces/AuthorizationRules",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 50,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-50 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.EventHub/namespaces/disasterRecoveryConfigs",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 6,
+    "maxLength": 50,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 6-50 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.EventHub/namespaces/eventhubs",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 256,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-256 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.EventHub/namespaces/eventhubs/authorizationRules",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 50,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-50 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.EventHub/namespaces/eventhubs/consumergroups",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 50,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-50 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.HDInsight/clusters",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 59,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 3-59 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ImportExport/jobs",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 2,
+    "maxLength": 64,
+    "startChar": "^[a-zA-Z]+",
+    "errors": [
+      "Length of the name should be between 2-64 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Insights/actionGroups",
+    "joinChar": "-",
+    "regex": "^[^[:cntrl:]\\:\\<\\>\\+\\/\\&\\%\\?\\]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "endChar": "[^\\.\\ ]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: :<>+/&%\\? or control characters",
+      "Name of the resource can't end with space or period"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Insights/components",
+    "joinChar": "-",
+    "regex": "^[^[:cntrl:]\\%\\&\\?\\/\\]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "endChar": "[^\\.\\ ]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: %&\\?/ or control characters",
+      "Name of the resource can't end with space or period"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Insights/scheduledQueryRules",
+    "joinChar": "-",
+    "regex": "^[^[:cntrl:]\\*\\<\\>\\%\\{\\}\\&\\:\\?\\/\\#\\]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "endChar": "[^\\.\\ ]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: *<>%{}&:\\?/# or control characters",
+      "Name of the resource can't end with space or period"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Insights/metricAlerts",
+    "joinChar": "-",
+    "regex": "^[^[:cntrl:]\\*\\#\\&\\+\\:\\<\\>\\?\\@\\%\\{\\}\\/\\]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "endChar": "[^\\.\\ ]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: *#&+:<>?@%{}\\/ or control characters",
+      "Name of the resource can't end with space or period"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Insights/activityLogAlerts",
+    "joinChar": "-",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\{\\}\\&\\:\\?\\+\\/\\#\\]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "endChar": "[^\\.\\ ]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: <>*%{}&:\\?+/# or control characters",
+      "Name of the resource can't end with space or period"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.IoTCentral/IoTApps",
+    "joinChar": "-",
+    "regex": "^[a-z0-9\\-]+$",
+    "minLength": 2,
+    "maxLength": 63,
+    "startChar": "^[a-z0-9]+",
+    "errors": [
+      "Length of the name should be between 2-63 characters",
+      "Only lowercase letters, numbers and hyphens are allowed",
+      "Name of the resource should start with lowercase letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.KeyVault/vaults",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 24,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 3-24 characters",
+      "Only letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.KeyVault/vaults/secrets",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 127,
+    "errors": [
+      "Length of the name should be between 1-127 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Kusto/clusters",
+    "joinChar": "",
+    "regex": "^[a-z0-9]+$",
+    "minLength": 4,
+    "maxLength": 22,
+    "startChar": "^[a-z]+",
+    "errors": [
+      "Length of the name should be between 1-127 characters",
+      "Only letters and numbers are allowed",
+      "Name of the resource should start with lowercase letter"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Kusto/clusters/databases",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\.\\ ]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Only letters, numbers, hyphens, spaces and periods are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Kusto/clusters/databases/dataConnections",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\.\\ ]+$",
+    "minLength": 1,
+    "maxLength": 40,
+    "errors": [
+      "Length of the name should be between 1-40 characters",
+      "Only letters, numbers, hyphens, spaces and periods are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Kusto/clusters/databases/dataConnections/eventhubconnections",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\.\\ ]+$",
+    "minLength": 1,
+    "maxLength": 40,
+    "errors": [
+      "Length of the name should be between 1-40 characters",
+      "Only letters, numbers, hyphens, spaces and periods are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.LabServices/labplans",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\.\\_]+$",
+    "minLength": 1,
+    "maxLength": 100,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-100 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.LabServices/labs",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\.\\_]+$",
+    "minLength": 1,
+    "maxLength": 100,
+    "startChar": "^[a-zA-Z]+",
+    "endChar": "[a-zA-Z0-9]+$",
+    "errors": [
+      "Length of the name should be between 1-100 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start with letter and end with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.LoadTestService/loadtests",
+    "joinChar": "",
+    "regex": "^[^\\<\\>\\*\\&\\@\\:\\?\\+\\/\\,\\;\\=\\.\\|\\[\\]\"\\ \\]+$",
+    "minLength": 1,
+    "maxLength": 64,
+    "startChar": "^[^0-9\\_\\-]+",
+    "endChar": "[^\\_\\-]+$",
+    "errors": [
+      "Length of the name should be between 1-64 characters",
+      "Can't use: <>*&@:?+/\\,;=.|[]\" or space",
+      "Can't start with underscore, hyphen, or number",
+      "Can't end with underscore or hyphen"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Logic/integrationAccounts",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\.\\_\\-\\{\\}\\(\\)\\[\\]]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, periods, underscores, hyphens and parenthesis are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Logic/integrationAccounts/assemblies",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\.\\_\\-\\{\\}\\(\\)\\[\\]]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, periods, underscores, hyphens and parenthesis are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Logic/integrationAccounts/batchConfigurations",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9]+$",
+    "minLength": 1,
+    "maxLength": 20,
+    "errors": [
+      "Length of the name should be between 1-20 characters",
+      "Only letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Logic/integrationAccounts/certificates",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\.\\_\\-\\{\\}\\(\\)\\[\\]]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, periods, underscores, hyphens and parenthesis are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Logic/integrationAccounts/maps",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\.\\_\\-\\{\\}\\(\\)\\[\\]]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, periods, underscores, hyphens and parenthesis are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Logic/integrationAccounts/partners",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\.\\_\\-\\{\\}\\(\\)\\[\\]]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, periods, underscores, hyphens and parenthesis are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Logic/integrationAccounts/rosettanetprocessconfigurations",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\.\\_\\-\\{\\}\\(\\)\\[\\]]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, periods, underscores, hyphens and parenthesis are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Logic/integrationAccounts/schemas",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\.\\_\\-\\{\\}\\(\\)\\[\\]]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, periods, underscores, hyphens and parenthesis are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Logic/integrationAccounts/sessions",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\.\\_\\-\\{\\}\\(\\)\\[\\]]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, periods, underscores, hyphens and parenthesis are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Logic/integrationServiceEnvironments",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\.\\_\\-\\{\\}\\(\\)\\[\\]]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, periods, underscores, hyphens and parenthesis are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Logic/integrationServiceEnvironments",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\.\\_\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, periods, underscores and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Logic/integrationServiceEnvironments/managedApis",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\.\\_\\-]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, periods, underscores and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Logic/workflows",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\.\\_\\-\\{\\}\\(\\)\\[\\]]+$",
+    "minLength": 1,
+    "maxLength": 43,
+    "errors": [
+      "Length of the name should be between 1-43 characters",
+      "Only letters, numbers, periods, underscores, hyphens and parenthesis are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.MachineLearning/commitmentPlans",
+    "joinChar": "-",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\+\\/\\]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "endChar": "[^\\ ]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: <>*%&:?+/\\ or control characters",
+      "Can't end with a space"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.MachineLearning/webServices",
+    "joinChar": "-",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\+\\/\\]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "endChar": "[^\\ ]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: <>*%&:?+/\\ or control characters",
+      "Can't end with a space"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.MachineLearning/workspaces",
+    "joinChar": "-",
+    "regex": "^[^[:cntrl:]\\<\\>\\*\\%\\&\\:\\?\\+\\/\\]+$",
+    "minLength": 1,
+    "maxLength": 260,
+    "endChar": "[^\\ ]+$",
+    "errors": [
+      "Length of the name should be between 1-260 characters",
+      "Can't use: <>*%&:?+/\\ or control characters",
+      "Can't end with a space"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.MachineLearningServices/workspaces",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 3,
+    "maxLength": 33,
+    "errors": [
+      "Length of the name should be between 3-33 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.MachineLearningServices/workspaces/computes",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 2,
+    "maxLength": 16,
+    "errors": [
+      "Length of the name should be between 2-16 characters",
+      "Only letters, numbers and hyphens are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.ManagedIdentity/userAssignedIdentities",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 3,
+    "maxLength": 128,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 3-128 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Maps/accounts",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 98,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 1-98 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Media/mediaservices",
+    "joinChar": "",
+    "regex": "^[a-z0-9]+$",
+    "minLength": 3,
+    "maxLength": 24,
+    "errors": [
+      "Length of the name should be between 3-24 characters",
+      "Only lowercase letters and numbers are allowed"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Media/mediaservices/liveEvents",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 32,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 1-32 characters",
+      "Only lowercase letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Media/mediaservices/liveEvents/liveOutputs",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 256,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 1-256 characters",
+      "Only lowercase letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Media/mediaservices/streamingEndpoints",
+    "joinChar": "",
+    "regex": "^[a-zA-Z0-9\\-]+$",
+    "minLength": 1,
+    "maxLength": 24,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 1-256 characters",
+      "Only lowercase letters, numbers and hyphens are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.NetApp/netAppAccounts",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 128,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 1-128 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.NetApp/netAppAccounts/backups",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 3,
+    "maxLength": 225,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 3-225 characters",
+      "Only letters, numbers, hyphens, underscores and periods are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.NetApp/netAppAccounts/backupPolicies",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 64,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 1-64 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.NetApp/netAppAccounts/capacityPools",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 64,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 1-64 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.NetApp/netAppAccounts/snapshots",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 225,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 1-255 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.NetApp/netAppAccounts/snapshotPolicies",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 64,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 1-64 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.NetApp/netAppAccounts/volumes",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 1,
+    "maxLength": 64,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 1-64 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.NetApp/netAppAccounts/volumeGroups",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_]+$",
+    "minLength": 3,
+    "maxLength": 64,
+    "startChar": "^[a-zA-Z0-9]+",
+    "errors": [
+      "Length of the name should be between 3-64 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with letter or number"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Network/applicationGateways",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9\\_]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with letter or number and end with letter, number or underscore"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Network/applicationSecurityGroups",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9\\_]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with letter or number and end with letter, number or underscore"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Network/azureFirewalls",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9\\_]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with letter or number and end with letter, number or underscore"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Network/bastionHosts",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9\\_]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with letter or number and end with letter, number or underscore"
+    ]
+  },
+  {
+    "resourceId": "Microsoft.Network/connections",
+    "joinChar": "-",
+    "regex": "^[a-zA-Z0-9\\-\\_\\.]+$",
+    "minLength": 1,
+    "maxLength": 80,
+    "startChar": "^[a-zA-Z0-9]+",
+    "endChar": "[a-zA-Z0-9\\_]+$",
+    "errors": [
+      "Length of the name should be between 1-80 characters",
+      "Only letters, numbers, hyphens and underscores are allowed",
+      "Name of the resource should start with letter or number and end with letter, number or underscore"
     ]
   }
 ]
